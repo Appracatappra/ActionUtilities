@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2D6CEA1B1FD07B2100A482D0 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6CEA251FD07D7900A482D0 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */; };
+		2D6CEA261FD07D7900A482D0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */; };
+		2D6CEA271FD07D7900A482D0 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */; };
+		2D6CEA281FD07D7900A482D0 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */; };
+		2D6CEA2A1FD07D9700A482D0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA291FD07D9600A482D0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D6CEA161FD07B2100A482D0 /* ActionUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities.h; sourceTree = "<group>"; };
 		2D6CEA1A1FD07B2100A482D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		2D6CEA291FD07D9600A482D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		2D6CEA2B1FD081F800A482D0 /* BuildUnifiedLibrary.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildUnifiedLibrary.sh; sourceTree = "<group>"; };
+		2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = TrimFramework.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,8 @@
 		2D6CEA0C1FD07B2100A482D0 = {
 			isa = PBXGroup;
 			children = (
+				2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */,
+				2D6CEA2B1FD081F800A482D0 /* BuildUnifiedLibrary.sh */,
 				2D6CEA181FD07B2100A482D0 /* ActionUtilities */,
 				2D6CEA171FD07B2100A482D0 /* Products */,
 			);
@@ -46,6 +60,11 @@
 		2D6CEA181FD07B2100A482D0 /* ActionUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				2D6CEA291FD07D9600A482D0 /* README.md */,
+				2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */,
+				2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */,
+				2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */,
+				2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */,
 				2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */,
 				2D6CEA1A1FD07B2100A482D0 /* Info.plist */,
 			);
@@ -95,6 +114,7 @@
 				TargetAttributes = {
 					2D6CEA151FD07B2100A482D0 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6CEA2A1FD07D9700A482D0 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6CEA261FD07D7900A482D0 /* StringExtensions.swift in Sources */,
+				2D6CEA251FD07D7900A482D0 /* DataExtensions.swift in Sources */,
+				2D6CEA271FD07D7900A482D0 /* ColorExtensions.swift in Sources */,
+				2D6CEA281FD07D7900A482D0 /* ImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +278,7 @@
 		2D6CEA1F1FD07B2100A482D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appracatappra.ActionUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +301,7 @@
 		2D6CEA201FD07B2100A482D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "0f576c22b11bc07fb6a87691c1caaed3"
+build_time: [1512066251, 572000]
+inputs:
+  "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/ActionUtilities/StringExtensions.swift": [9223372036, 854775807]
+  "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/ActionUtilities/DataExtensions.swift": [9223372036, 854775807]
+  "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/ActionUtilities/ColorExtensions.swift": [9223372036, 854775807]
+  "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/ActionUtilities/ImageExtensions.swift": [9223372036, 854775807]
