@@ -38,6 +38,7 @@
 		2D2CCE19200FD4AF00335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D2CCE1A200FDA9900335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D2CCE1B200FDBF500335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D2CCE1C200FE7BB00335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleHardwareType.swift; sourceTree = "<group>"; };
 		2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareInformation.swift; sourceTree = "<group>"; };
 		2D6CEA161FD07B2100A482D0 /* ActionUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +108,7 @@
 		2D6CEA0C1FD07B2100A482D0 = {
 			isa = PBXGroup;
 			children = (
+				2D2CCE1C200FE7BB00335A9D /* README.md */,
 				2D74D3191FD1C315002B12B3 /* BuildUnifiedLibrary.sh */,
 				2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */,
 				2D6CEA181FD07B2100A482D0 /* ActionUtilities */,
