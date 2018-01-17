@@ -5,7 +5,7 @@
 #
 #  Created by Kevin Mullins on 11/30/17.
 #  Copyright © 2017 Appracatappra, LLC. All rights reserved.
-#  Use in Terminal: sh BuildUnifiedLibrary.sh 
+#  Use in Terminal: sh BuildUnifiedLibrary.sh
 FRAMEWORK=ActionUtilities
 BUILD=build
 FRAMEWORK_PATH=$FRAMEWORK.framework

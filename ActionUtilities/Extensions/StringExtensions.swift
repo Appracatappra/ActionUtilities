@@ -96,4 +96,51 @@ extension String {
             return name
         }
     }
+    
+    /**
+     Returns the draw height of the string in the given font constrained to the given width.
+     
+     - Parameters:
+         - width: The pixel width to constrain the string to.
+         - font: The font that the string will be drawn in.
+     
+     - Returns: The height of the string drawn in the given font constrained to the given width.
+    */
+    public func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+        
+        return ceil(boundingBox.height)
+    }
+    
+    /**
+     Returns the draw width of the string in the given font constrained to the given height.
+     
+     - Parameters:
+         - height: The pixel height to constrain the string to.
+         - font: The font that the string will be drawn in.
+     
+     - Returns: The width of the string drawn in the given font constrained to the given height.
+     */
+    public func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+        
+        return ceil(boundingBox.width)
+    }
+    
+    /**
+     Returns the drawing bounds of the string in the given font constrained to the given maximum bounds.
+     
+     - Parameters:
+     - size: The maximum pixel width and height on the string.
+     - font: The font that the string will be drawn in.
+     
+     - Returns: The bounds on the string drawn in the given font constrained to the given maximum bounds.
+    */
+    public func bounds(withConstrainedSize size: CGSize, font: UIFont) -> CGSize {
+        let boundingBox = self.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+        
+        return CGSize(width: boundingBox.width, height: boundingBox.height)
+    }
 }
