@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HardwareInformation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HardwareInformation" class="dashAnchor"></a>
+    <a title="HardwareInformation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (26% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HardwareInformation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HardwareInformation.html">HardwareInformation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AppleHardwareType.html">AppleHardwareType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage/ImageRepresentationFormat.html">– ImageRepresentationFormat</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HardwareInformation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HardwareInformation</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines a set of convenience properties and functions when working on Apple devices, such as checking the device model name (<code>iPhone10,3</code>), getting the device type (<code>iPhoneX</code>), getting the OS version, the current device orientation and internet connection state.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC7isPhoneSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isPhone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC7isPhoneSbvZ">isPhone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is running on an iPhone, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isPhone</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC5isPadSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isPad" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC5isPadSbvZ">isPad</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is running on an iPad, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isPad</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC4isTVSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isTV" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC4isTVSbvZ">isTV</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is runnin on an Apple TV, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isTV</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC5isCarSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isCar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC5isCarSbvZ">isCar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is running in Apple CarPlay, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isCar</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC7isWatchSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isWatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC7isWatchSbvZ">isWatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is running on an Apple Watch, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isWatch</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC5isMacSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isMac" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC5isMacSbvZ">isMac</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the app is running on an Mac, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isMac</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC9modelNameSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/modelName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC9modelNameSSvZ">modelName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the model name of the device the app is running on. For example, <code>iPhone10,3</code> or <code>iPhone10,6</code> for the <code>iPhone X</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">modelName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC10deviceTypeAA05AppleeH0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/deviceType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC10deviceTypeAA05AppleeH0OvZ">deviceType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the human readable type of the device that the app is running on (for example <code>iPhoneX</code>) or <code>unknown</code> if the type cannot be discovered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">deviceType</span><span class="p">:</span> <span class="kt"><a href="../Enums/AppleHardwareType.html">AppleHardwareType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC9osVersionSSvZ"></a>
+                    <a name="//apple_ref/swift/Variable/osVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC9osVersionSSvZ">osVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the version number (for example <code>iOS 11.1</code>) of the OS installed on the device that the app is running on.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">osVersion</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Variable/deviceOrientation" class="dashAnchor"></a>
+                    <a class="token" href="#/">deviceOrientation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current orientation of the device that the app is running on. If the orientation is unknown, a guess will be made based on the main screen&rsquo;s bounds: if the <code>width</code> is less than the <code>height</code>, <code>portrait</code> is returned, else <code>landscapeLeft</code> is returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HardwareInformation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC17deviceOrientationSC022WKInterfaceDeviceCrownH0OvZ"></a>
+                    <a name="//apple_ref/swift/Variable/deviceOrientation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC17deviceOrientationSC022WKInterfaceDeviceCrownH0OvZ">deviceOrientation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current orientation of the Apple Watch (based on the crown orientation).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">deviceOrientation</span><span class="p">:</span> <span class="kt">WKInterfaceDeviceCrownOrientation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC15isRetinaDisplaySbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isRetinaDisplay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC15isRetinaDisplaySbvZ">isRetinaDisplay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the device the app is running on has a retina display, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isRetinaDisplay</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC11isHDDisplaySbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/isHDDisplay" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC11isHDDisplaySbvZ">isHDDisplay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the device the app is running on has a HD display, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">isHDDisplay</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23ActionUtilities_watchOS19HardwareInformationC12screenBoundsSC6CGRectVvZ"></a>
+                    <a name="//apple_ref/swift/Variable/screenBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23ActionUtilities_watchOS19HardwareInformationC12screenBoundsSC6CGRectVvZ">screenBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the bounds of the main screen of the device that the app is running on.</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    As of iOS 8.0, these bounds will always be relative to the device&rsquo;s orientation.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">screenBounds</span><span class="p">:</span> <span class="kt">CGRect</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Variable/isConnectedToNetwork" class="dashAnchor"></a>
+                    <a class="token" href="#/">isConnectedToNetwork</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the device the app is running on is connected to the internet, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HardwareInformation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Variable/isWWANNetworkConnection" class="dashAnchor"></a>
+                    <a class="token" href="#/">isWWANNetworkConnection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if the device the app is running on is connected to the internet via a cellular connection, such as EDGE or GPRS, else returns <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HardwareInformation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2018-01-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

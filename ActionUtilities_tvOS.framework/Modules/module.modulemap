@@ -1,0 +1,11 @@
+framework module ActionUtilities_tvOS {
+  umbrella header "ActionUtilities_tvOS.h"
+
+  export *
+  module * { export * }
+}
+
+module ActionUtilities_tvOS.Swift {
+    header "ActionUtilities_tvOS-Swift.h"
+    requires objc
+}

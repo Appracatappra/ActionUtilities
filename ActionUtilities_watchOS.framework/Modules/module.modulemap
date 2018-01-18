@@ -1,0 +1,11 @@
+framework module ActionUtilities_watchOS {
+  umbrella header "ActionUtilities_watchOS.h"
+
+  export *
+  module * { export * }
+}
+
+module ActionUtilities_watchOS.Swift {
+    header "ActionUtilities_watchOS-Swift.h"
+    requires objc
+}

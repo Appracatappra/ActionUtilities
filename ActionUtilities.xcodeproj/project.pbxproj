@@ -7,30 +7,132 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2DD971F01FD1B3150003E0E9 /* ActionUtilitiesUniversal */ = {
+		2D2CCE3B2010114D00335A9D /* ActionUtilitiesUniversal.tvOS */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 2DD971F11FD1B3150003E0E9 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal" */;
+			buildConfigurationList = 2D2CCE3C2010114D00335A9D /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.tvOS" */;
+			buildPhases = (
+				2DDA3A612010EEDC0094D28A /* Make Universal Library */,
+			);
+			dependencies = (
+			);
+			name = ActionUtilitiesUniversal.tvOS;
+			productName = ActionUtilitiesUniversal.tvOS;
+		};
+		2D9FFED220113DB100A41E3B /* ActionUtilitiesUniversal.macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2D9FFED320113DB100A41E3B /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.macOS" */;
+			buildPhases = (
+				2D9FFED620113DC000A41E3B /* Make Library */,
+			);
+			dependencies = (
+			);
+			name = ActionUtilitiesUniversal.macOS;
+			productName = ActionUtilitiesUniversal.macOS;
+		};
+		2D9FFED92011449A00A41E3B /* APIDocs.iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2D9FFEDA2011449A00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.iOS" */;
+			buildPhases = (
+				2D9FFEDD20114A9500A41E3B /* Build API Docs */,
+			);
+			dependencies = (
+			);
+			name = APIDocs.iOS;
+			productName = APIDocs.iOS;
+		};
+		2D9FFEDE2011513C00A41E3B /* APIDocs.tvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2D9FFEDF2011513C00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.tvOS" */;
+			buildPhases = (
+				2D9FFEE22011514A00A41E3B /* Make API Documentation */,
+			);
+			dependencies = (
+			);
+			name = APIDocs.tvOS;
+			productName = APIDocs.tvOS;
+		};
+		2D9FFEE32011539F00A41E3B /* APIDocs.watchOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2D9FFEE42011539F00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.watchOS" */;
+			buildPhases = (
+				2D9FFEE7201153A900A41E3B /* Make API Documentation */,
+			);
+			dependencies = (
+			);
+			name = APIDocs.watchOS;
+			productName = APIDocs.watchOS;
+		};
+		2D9FFEE8201155BD00A41E3B /* APIDocs.macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2D9FFEE9201155BD00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.macOS" */;
+			buildPhases = (
+				2D9FFEEC201155C100A41E3B /* Make API Documentation */,
+			);
+			dependencies = (
+			);
+			name = APIDocs.macOS;
+			productName = APIDocs.macOS;
+		};
+		2DA64259201117F3001E8E66 /* ActionUtilitiesUniversal.watchOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2DA6425A201117F3001E8E66 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.watchOS" */;
+			buildPhases = (
+				2DA6425D2011184E001E8E66 /* Make Universal Library */,
+			);
+			dependencies = (
+			);
+			name = ActionUtilitiesUniversal.watchOS;
+			productName = ActionUtilitiesUniversal.watchOS;
+		};
+		2DD971F01FD1B3150003E0E9 /* ActionUtilitiesUniversal.iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2DD971F11FD1B3150003E0E9 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.iOS" */;
 			buildPhases = (
 				2DD971F41FD1B31E0003E0E9 /* Make Universal Library */,
 			);
 			dependencies = (
 			);
-			name = ActionUtilitiesUniversal;
+			name = ActionUtilitiesUniversal.iOS;
 			productName = ActionUtilitiesUniversal;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2D16CABB200EA59D00FEBC38 /* ACNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16CABA200EA59D00FEBC38 /* ACNotify.swift */; };
-		2D5D4BBA200F96360053D10B /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */; };
-		2D5D4BBC200F963F0053D10B /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */; };
-		2D6CEA1B1FD07B2100A482D0 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D6CEA251FD07D7900A482D0 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */; };
-		2D6CEA261FD07D7900A482D0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */; };
-		2D6CEA271FD07D7900A482D0 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */; };
-		2D6CEA281FD07D7900A482D0 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */; };
-		2D9C54AD1FD1BD3C00A19940 /* ActionUtilitiesRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9C54AB1FD1BD3C00A19940 /* ActionUtilitiesRelease.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DD971F51FD1B36D0003E0E9 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */; };
+		2D2CCE262010083900335A9D /* ActionUtilities_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2CCE242010083900335A9D /* ActionUtilities_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2CCE2A2010095300335A9D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */; };
+		2D2CCE2B2010095300335A9D /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */; };
+		2D2CCE2C2010095300335A9D /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */; };
+		2D2CCE2D2010095300335A9D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */; };
+		2D2CCE2E2010095700335A9D /* ACNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16CABA200EA59D00FEBC38 /* ACNotify.swift */; };
+		2D2CCE2F2010095A00335A9D /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */; };
+		2D2CCE302010095A00335A9D /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */; };
+		2D2CCE322010101500335A9D /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */; };
+		2D9FFEBA2011242000A41E3B /* ActionUtilities_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9FFEB82011242000A41E3B /* ActionUtilities_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9FFEC6201129C300A41E3B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFEC5201129C300A41E3B /* ColorExtensions.swift */; };
+		2D9FFEC820112A2E00A41E3B /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFEC720112A2E00A41E3B /* DataExtensions.swift */; };
+		2D9FFECA20112AA500A41E3B /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFEC920112AA500A41E3B /* ImageExtensions.swift */; };
+		2D9FFECC20112BB600A41E3B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFECB20112BB600A41E3B /* StringExtensions.swift */; };
+		2D9FFECD201133BF00A41E3B /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */; };
+		2D9FFECE201133CB00A41E3B /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */; };
+		2D9FFECF20113BF600A41E3B /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */; };
+		2D9FFED020113BF800A41E3B /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */; };
+		2D9FFED120113BF900A41E3B /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */; };
+		2DA6423D2010F24C001E8E66 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6423C2010F24C001E8E66 /* README.md */; };
+		2DA6423E2010F258001E8E66 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */; };
+		2DA6423F2010F258001E8E66 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */; };
+		2DA642402010F258001E8E66 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */; };
+		2DA642412010F258001E8E66 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */; };
+		2DA642422010F263001E8E66 /* ACNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16CABA200EA59D00FEBC38 /* ACNotify.swift */; };
+		2DA642432010F268001E8E66 /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */; };
+		2DA642442010F268001E8E66 /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */; };
+		2DA6424E20110BC1001E8E66 /* ActionUtilities_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA6424C20110BC1001E8E66 /* ActionUtilities_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DA6425720110BD6001E8E66 /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */; };
+		2DA6425820110BD6001E8E66 /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */; };
+		2DA6425E20111A91001E8E66 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */; };
+		2DA6425F20111A91001E8E66 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */; };
+		2DA6426020111A91001E8E66 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */; };
+		2DA6426120111A91001E8E66 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */; };
+		2DDA3A6B2010F1A70094D28A /* ActionUtilities_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDA3A692010F1A70094D28A /* ActionUtilities_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,32 +141,56 @@
 		2D2CCE1A200FDA9900335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D2CCE1B200FDBF500335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D2CCE1C200FE7BB00335A9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D2CCE222010083900335A9D /* ActionUtilities_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2CCE242010083900335A9D /* ActionUtilities_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities_tvOS.h; sourceTree = "<group>"; };
+		2D2CCE252010083900335A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D5D4BB9200F96360053D10B /* AppleHardwareType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleHardwareType.swift; sourceTree = "<group>"; };
 		2D5D4BBB200F963F0053D10B /* HardwareInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareInformation.swift; sourceTree = "<group>"; };
-		2D6CEA161FD07B2100A482D0 /* ActionUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities.h; sourceTree = "<group>"; };
-		2D6CEA1A1FD07B2100A482D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		2D6CEA221FD07D7900A482D0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
-		2D6CEA291FD07D9600A482D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ActionUtilities/Extensions/README.md; sourceTree = SOURCE_ROOT; };
 		2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = TrimFramework.sh; sourceTree = "<group>"; };
-		2D74D3191FD1C315002B12B3 /* BuildUnifiedLibrary.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildUnifiedLibrary.sh; sourceTree = "<group>"; };
-		2D9C54A91FD1BD3C00A19940 /* ActionUtilitiesRelease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilitiesRelease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D9C54AB1FD1BD3C00A19940 /* ActionUtilitiesRelease.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilitiesRelease.h; sourceTree = "<group>"; };
-		2D9C54AC1FD1BD3C00A19940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9FFEB62011242000A41E3B /* ActionUtilities_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9FFEB82011242000A41E3B /* ActionUtilities_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities_macOS.h; sourceTree = "<group>"; };
+		2D9FFEB92011242000A41E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9FFEC5201129C300A41E3B /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		2D9FFEC720112A2E00A41E3B /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		2D9FFEC920112AA500A41E3B /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		2D9FFECB20112BB600A41E3B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2D9FFED8201140D100A41E3B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DA6423C2010F24C001E8E66 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DA6424A20110BC1001E8E66 /* ActionUtilities_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA6424C20110BC1001E8E66 /* ActionUtilities_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities_watchOS.h; sourceTree = "<group>"; };
+		2DA6424D20110BC1001E8E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DDA3A672010F1A60094D28A /* ActionUtilities_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDA3A692010F1A70094D28A /* ActionUtilities_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionUtilities_iOS.h; sourceTree = "<group>"; };
+		2DDA3A6A2010F1A70094D28A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D6CEA121FD07B2100A482D0 /* Frameworks */ = {
+		2D2CCE1E2010083900335A9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D9C54A51FD1BD3C00A19940 /* Frameworks */ = {
+		2D9FFEB22011242000A41E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6424620110BC1001E8E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDA3A632010F1A60094D28A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,6 +200,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D2CCE232010083900335A9D /* ActionUtilities.tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D2CCE242010083900335A9D /* ActionUtilities_tvOS.h */,
+				2D2CCE252010083900335A9D /* Info.plist */,
+			);
+			path = ActionUtilities.tvOS;
+			sourceTree = "<group>";
+		};
+		2D2CCE3120100F9900335A9D /* Shared Source */ = {
+			isa = PBXGroup;
+			children = (
+				2D2CCE19200FD4AF00335A9D /* README.md */,
+				2D5D4BBF200FA9EF0053D10B /* Extensions */,
+				2D5D4BBE200FA9D70053D10B /* Utilities */,
+				2D5D4BBD200FA9C40053D10B /* Hardware */,
+			);
+			path = "Shared Source";
+			sourceTree = "<group>";
+		};
 		2D5D4BBD200FA9C40053D10B /* Hardware */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +242,7 @@
 		2D5D4BBF200FA9EF0053D10B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2D6CEA291FD07D9600A482D0 /* README.md */,
+				2DA6423C2010F24C001E8E66 /* README.md */,
 				2D6CEA231FD07D7900A482D0 /* ColorExtensions.swift */,
 				2D6CEA211FD07D7900A482D0 /* DataExtensions.swift */,
 				2D6CEA241FD07D7900A482D0 /* ImageExtensions.swift */,
@@ -109,10 +255,12 @@
 			isa = PBXGroup;
 			children = (
 				2D2CCE1C200FE7BB00335A9D /* README.md */,
-				2D74D3191FD1C315002B12B3 /* BuildUnifiedLibrary.sh */,
 				2D6CEA2C1FD0861500A482D0 /* TrimFramework.sh */,
-				2D6CEA181FD07B2100A482D0 /* ActionUtilities */,
-				2D9C54AA1FD1BD3C00A19940 /* ActionUtilitiesRelease */,
+				2D2CCE3120100F9900335A9D /* Shared Source */,
+				2DDA3A682010F1A70094D28A /* ActionUtilities.iOS */,
+				2D2CCE232010083900335A9D /* ActionUtilities.tvOS */,
+				2DA6424B20110BC1001E8E66 /* ActionUtilities.watchOS */,
+				2D9FFEB72011242000A41E3B /* ActionUtilities.macOS */,
 				2D6CEA171FD07B2100A482D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,90 +268,162 @@
 		2D6CEA171FD07B2100A482D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D6CEA161FD07B2100A482D0 /* ActionUtilities.framework */,
-				2D9C54A91FD1BD3C00A19940 /* ActionUtilitiesRelease.framework */,
+				2D2CCE222010083900335A9D /* ActionUtilities_tvOS.framework */,
+				2DDA3A672010F1A60094D28A /* ActionUtilities_iOS.framework */,
+				2DA6424A20110BC1001E8E66 /* ActionUtilities_watchOS.framework */,
+				2D9FFEB62011242000A41E3B /* ActionUtilities_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D6CEA181FD07B2100A482D0 /* ActionUtilities */ = {
+		2D9FFEB72011242000A41E3B /* ActionUtilities.macOS */ = {
 			isa = PBXGroup;
 			children = (
-				2D2CCE19200FD4AF00335A9D /* README.md */,
-				2D5D4BBF200FA9EF0053D10B /* Extensions */,
-				2D5D4BBE200FA9D70053D10B /* Utilities */,
-				2D5D4BBD200FA9C40053D10B /* Hardware */,
-				2D6CEA191FD07B2100A482D0 /* ActionUtilities.h */,
-				2D6CEA1A1FD07B2100A482D0 /* Info.plist */,
+				2D9FFED7201140A500A41E3B /* Extensions */,
+				2D9FFEB82011242000A41E3B /* ActionUtilities_macOS.h */,
+				2D9FFEB92011242000A41E3B /* Info.plist */,
 			);
-			path = ActionUtilities;
+			path = ActionUtilities.macOS;
 			sourceTree = "<group>";
 		};
-		2D9C54AA1FD1BD3C00A19940 /* ActionUtilitiesRelease */ = {
+		2D9FFED7201140A500A41E3B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2D9C54AB1FD1BD3C00A19940 /* ActionUtilitiesRelease.h */,
-				2D9C54AC1FD1BD3C00A19940 /* Info.plist */,
+				2D9FFED8201140D100A41E3B /* README.md */,
+				2D9FFEC5201129C300A41E3B /* ColorExtensions.swift */,
+				2D9FFEC720112A2E00A41E3B /* DataExtensions.swift */,
+				2D9FFEC920112AA500A41E3B /* ImageExtensions.swift */,
+				2D9FFECB20112BB600A41E3B /* StringExtensions.swift */,
 			);
-			path = ActionUtilitiesRelease;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DA6424B20110BC1001E8E66 /* ActionUtilities.watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6424C20110BC1001E8E66 /* ActionUtilities_watchOS.h */,
+				2DA6424D20110BC1001E8E66 /* Info.plist */,
+			);
+			path = ActionUtilities.watchOS;
+			sourceTree = "<group>";
+		};
+		2DDA3A682010F1A70094D28A /* ActionUtilities.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2DDA3A692010F1A70094D28A /* ActionUtilities_iOS.h */,
+				2DDA3A6A2010F1A70094D28A /* Info.plist */,
+			);
+			path = ActionUtilities.iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D6CEA131FD07B2100A482D0 /* Headers */ = {
+		2D2CCE1F2010083900335A9D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6CEA1B1FD07B2100A482D0 /* ActionUtilities.h in Headers */,
+				2D2CCE262010083900335A9D /* ActionUtilities_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D9C54A61FD1BD3C00A19940 /* Headers */ = {
+		2D9FFEB32011242000A41E3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D9C54AD1FD1BD3C00A19940 /* ActionUtilitiesRelease.h in Headers */,
+				2D9FFEBA2011242000A41E3B /* ActionUtilities_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6424720110BC1001E8E66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6424E20110BC1001E8E66 /* ActionUtilities_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDA3A642010F1A60094D28A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDA3A6B2010F1A70094D28A /* ActionUtilities_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D6CEA151FD07B2100A482D0 /* ActionUtilities */ = {
+		2D2CCE212010083900335A9D /* ActionUtilities.tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D6CEA1E1FD07B2100A482D0 /* Build configuration list for PBXNativeTarget "ActionUtilities" */;
+			buildConfigurationList = 2D2CCE272010083900335A9D /* Build configuration list for PBXNativeTarget "ActionUtilities.tvOS" */;
 			buildPhases = (
-				2D6CEA111FD07B2100A482D0 /* Sources */,
-				2D6CEA121FD07B2100A482D0 /* Frameworks */,
-				2D6CEA131FD07B2100A482D0 /* Headers */,
-				2D6CEA141FD07B2100A482D0 /* Resources */,
+				2D2CCE1D2010083900335A9D /* Sources */,
+				2D2CCE1E2010083900335A9D /* Frameworks */,
+				2D2CCE1F2010083900335A9D /* Headers */,
+				2D2CCE202010083900335A9D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ActionUtilities;
-			productName = ActionUtilities;
-			productReference = 2D6CEA161FD07B2100A482D0 /* ActionUtilities.framework */;
+			name = ActionUtilities.tvOS;
+			productName = ActionUtilities.tvOS;
+			productReference = 2D2CCE222010083900335A9D /* ActionUtilities_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D9C54A81FD1BD3C00A19940 /* ActionUtilitiesRelease */ = {
+		2D9FFEB52011242000A41E3B /* ActionUtilities.macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D9C54AE1FD1BD3C00A19940 /* Build configuration list for PBXNativeTarget "ActionUtilitiesRelease" */;
+			buildConfigurationList = 2D9FFEBB2011242000A41E3B /* Build configuration list for PBXNativeTarget "ActionUtilities.macOS" */;
 			buildPhases = (
-				2D9C54A41FD1BD3C00A19940 /* Sources */,
-				2D9C54A51FD1BD3C00A19940 /* Frameworks */,
-				2D9C54A61FD1BD3C00A19940 /* Headers */,
-				2D9C54A71FD1BD3C00A19940 /* Resources */,
+				2D9FFEB12011242000A41E3B /* Sources */,
+				2D9FFEB22011242000A41E3B /* Frameworks */,
+				2D9FFEB32011242000A41E3B /* Headers */,
+				2D9FFEB42011242000A41E3B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ActionUtilitiesRelease;
-			productName = ActionUtilitiesRelease;
-			productReference = 2D9C54A91FD1BD3C00A19940 /* ActionUtilitiesRelease.framework */;
+			name = ActionUtilities.macOS;
+			productName = ActionUtilities.macOS;
+			productReference = 2D9FFEB62011242000A41E3B /* ActionUtilities_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DA6424920110BC1001E8E66 /* ActionUtilities.watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA6424F20110BC1001E8E66 /* Build configuration list for PBXNativeTarget "ActionUtilities.watchOS" */;
+			buildPhases = (
+				2DA6424520110BC1001E8E66 /* Sources */,
+				2DA6424620110BC1001E8E66 /* Frameworks */,
+				2DA6424720110BC1001E8E66 /* Headers */,
+				2DA6424820110BC1001E8E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionUtilities.watchOS;
+			productName = ActionUtilities.watchOS;
+			productReference = 2DA6424A20110BC1001E8E66 /* ActionUtilities_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DDA3A662010F1A60094D28A /* ActionUtilities.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDA3A6C2010F1A70094D28A /* Build configuration list for PBXNativeTarget "ActionUtilities.iOS" */;
+			buildPhases = (
+				2DDA3A622010F1A60094D28A /* Sources */,
+				2DDA3A632010F1A60094D28A /* Frameworks */,
+				2DDA3A642010F1A60094D28A /* Headers */,
+				2DDA3A652010F1A60094D28A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionUtilities.iOS;
+			productName = ActionUtilities.iOS;
+			productReference = 2DDA3A672010F1A60094D28A /* ActionUtilities_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -215,17 +435,52 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Appracatappra, LLC.";
 				TargetAttributes = {
-					2D6CEA151FD07B2100A482D0 = {
-						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
+					2D2CCE212010083900335A9D = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					2D9C54A81FD1BD3C00A19940 = {
-						CreatedOnToolsVersion = 9.1;
+					2D2CCE3B2010114D00335A9D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFEB52011242000A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFED220113DB100A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFED92011449A00A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFEDE2011513C00A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFEE32011539F00A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2D9FFEE8201155BD00A41E3B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2DA6424920110BC1001E8E66 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2DA64259201117F3001E8E66 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 					2DD971F01FD1B3150003E0E9 = {
 						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					2DDA3A662010F1A60094D28A = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -242,32 +497,143 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D6CEA151FD07B2100A482D0 /* ActionUtilities */,
-				2DD971F01FD1B3150003E0E9 /* ActionUtilitiesUniversal */,
-				2D9C54A81FD1BD3C00A19940 /* ActionUtilitiesRelease */,
+				2DDA3A662010F1A60094D28A /* ActionUtilities.iOS */,
+				2DD971F01FD1B3150003E0E9 /* ActionUtilitiesUniversal.iOS */,
+				2D9FFED92011449A00A41E3B /* APIDocs.iOS */,
+				2D2CCE212010083900335A9D /* ActionUtilities.tvOS */,
+				2D2CCE3B2010114D00335A9D /* ActionUtilitiesUniversal.tvOS */,
+				2D9FFEDE2011513C00A41E3B /* APIDocs.tvOS */,
+				2DA6424920110BC1001E8E66 /* ActionUtilities.watchOS */,
+				2DA64259201117F3001E8E66 /* ActionUtilitiesUniversal.watchOS */,
+				2D9FFEE32011539F00A41E3B /* APIDocs.watchOS */,
+				2D9FFEB52011242000A41E3B /* ActionUtilities.macOS */,
+				2D9FFED220113DB100A41E3B /* ActionUtilitiesUniversal.macOS */,
+				2D9FFEE8201155BD00A41E3B /* APIDocs.macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D6CEA141FD07B2100A482D0 /* Resources */ = {
+		2D2CCE202010083900335A9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD971F51FD1B36D0003E0E9 /* TrimFramework.sh in Resources */,
+				2D2CCE322010101500335A9D /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D9C54A71FD1BD3C00A19940 /* Resources */ = {
+		2D9FFEB42011242000A41E3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9FFED120113BF900A41E3B /* TrimFramework.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6424820110BC1001E8E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9FFED020113BF800A41E3B /* TrimFramework.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDA3A652010F1A60094D28A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6423D2010F24C001E8E66 /* README.md in Resources */,
+				2D9FFECF20113BF600A41E3B /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D9FFED620113DC000A41E3B /* Make Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_TARGET=\"macOS\"\nDEVICE_OS=\"macosx\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+		2D9FFEDD20114A9500A41E3B /* Build API Docs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build API Docs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"iOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"iphoneos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,ActionUtilities.${API_TARGET} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+		};
+		2D9FFEE22011514A00A41E3B /* Make API Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make API Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"tvOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"appletvos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,ActionUtilities.${API_TARGET} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+		};
+		2D9FFEE7201153A900A41E3B /* Make API Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make API Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"watchOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"watchos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,ActionUtilities.${API_TARGET} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+		};
+		2D9FFEEC201155C100A41E3B /* Make API Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make API Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"macOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"macosx\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,ActionUtilities.${API_TARGET} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+		};
+		2DA6425D2011184E001E8E66 /* Make Universal Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make Universal Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal-iOS\nUNIVERSAL_TARGET=\"watchOS\"\nDEVICE_OS=\"watchos\"\nDEVICE_SIMULATOR=\"watchsimulator\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" VALID_ARCHS=\"x86_64 i386\" -configuration ${CONFIGURATION} -sdk ${DEVICE_SIMULATOR} ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n\n# KKM - Testing\n# open \"${UNIVERSAL_OUTPUTFOLDER}\"";
+		};
 		2DD971F41FD1B31E0003E0E9 /* Make Universal Library */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,35 +646,146 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" VALID_ARCHS=\"x86_64 i386\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal-iOS\nUNIVERSAL_TARGET=\"iOS\"\nDEVICE_OS=\"iphoneos\"\nDEVICE_SIMULATOR=\"iphonesimulator\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" VALID_ARCHS=\"x86_64 i386\" -configuration ${CONFIGURATION} -sdk ${DEVICE_SIMULATOR} ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n\n# KKM - Testing\n# open \"${UNIVERSAL_OUTPUTFOLDER}\"";
+		};
+		2DDA3A612010EEDC0094D28A /* Make Universal Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Make Universal Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal-iOS\nUNIVERSAL_TARGET=\"tvOS\"\nDEVICE_OS=\"appletvos\"\nDEVICE_SIMULATOR=\"appletvsimulator\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"ActionUtilities.${UNIVERSAL_TARGET}\" VALID_ARCHS=\"x86_64 i386\" -configuration ${CONFIGURATION} -sdk ${DEVICE_SIMULATOR} ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/Modules/ActionUtilities_${UNIVERSAL_TARGET}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_SIMULATOR}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-${DEVICE_OS}/ActionUtilities_${UNIVERSAL_TARGET}.framework/ActionUtilities_${UNIVERSAL_TARGET}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/ActionUtilities_${UNIVERSAL_TARGET}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"\n\n# KKM - Testing\n# open \"${UNIVERSAL_OUTPUTFOLDER}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D6CEA111FD07B2100A482D0 /* Sources */ = {
+		2D2CCE1D2010083900335A9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5D4BBA200F96360053D10B /* AppleHardwareType.swift in Sources */,
-				2D6CEA261FD07D7900A482D0 /* StringExtensions.swift in Sources */,
-				2D5D4BBC200F963F0053D10B /* HardwareInformation.swift in Sources */,
-				2D16CABB200EA59D00FEBC38 /* ACNotify.swift in Sources */,
-				2D6CEA251FD07D7900A482D0 /* DataExtensions.swift in Sources */,
-				2D6CEA271FD07D7900A482D0 /* ColorExtensions.swift in Sources */,
-				2D6CEA281FD07D7900A482D0 /* ImageExtensions.swift in Sources */,
+				2D2CCE2F2010095A00335A9D /* AppleHardwareType.swift in Sources */,
+				2D2CCE2D2010095300335A9D /* StringExtensions.swift in Sources */,
+				2D2CCE302010095A00335A9D /* HardwareInformation.swift in Sources */,
+				2D2CCE2E2010095700335A9D /* ACNotify.swift in Sources */,
+				2D2CCE2C2010095300335A9D /* ImageExtensions.swift in Sources */,
+				2D2CCE2A2010095300335A9D /* ColorExtensions.swift in Sources */,
+				2D2CCE2B2010095300335A9D /* DataExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D9C54A41FD1BD3C00A19940 /* Sources */ = {
+		2D9FFEB12011242000A41E3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9FFECE201133CB00A41E3B /* HardwareInformation.swift in Sources */,
+				2D9FFECC20112BB600A41E3B /* StringExtensions.swift in Sources */,
+				2D9FFECD201133BF00A41E3B /* AppleHardwareType.swift in Sources */,
+				2D9FFEC820112A2E00A41E3B /* DataExtensions.swift in Sources */,
+				2D9FFECA20112AA500A41E3B /* ImageExtensions.swift in Sources */,
+				2D9FFEC6201129C300A41E3B /* ColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6424520110BC1001E8E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6426120111A91001E8E66 /* StringExtensions.swift in Sources */,
+				2DA6426020111A91001E8E66 /* ImageExtensions.swift in Sources */,
+				2DA6425720110BD6001E8E66 /* AppleHardwareType.swift in Sources */,
+				2DA6425F20111A91001E8E66 /* DataExtensions.swift in Sources */,
+				2DA6425820110BD6001E8E66 /* HardwareInformation.swift in Sources */,
+				2DA6425E20111A91001E8E66 /* ColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDA3A622010F1A60094D28A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA642432010F268001E8E66 /* AppleHardwareType.swift in Sources */,
+				2DA642412010F258001E8E66 /* StringExtensions.swift in Sources */,
+				2DA642442010F268001E8E66 /* HardwareInformation.swift in Sources */,
+				2DA642422010F263001E8E66 /* ACNotify.swift in Sources */,
+				2DA642402010F258001E8E66 /* ImageExtensions.swift in Sources */,
+				2DA6423E2010F258001E8E66 /* ColorExtensions.swift in Sources */,
+				2DA6423F2010F258001E8E66 /* DataExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2D2CCE282010083900335A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ActionUtilities.tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		2D2CCE292010083900335A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ActionUtilities.tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		2D2CCE3D2010114D00335A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D2CCE3E2010114D00335A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		2D6CEA1C1FD07B2100A482D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,76 +899,148 @@
 			};
 			name = Release;
 		};
-		2D6CEA1F1FD07B2100A482D0 /* Debug */ = {
+		2D9FFEBC2011242000A41E3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y2HRRTRAA5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ActionUtilities/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ActionUtilities.macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appracatappra.ActionUtilities;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2D6CEA201FD07B2100A482D0 /* Release */ = {
+		2D9FFEBD2011242000A41E3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y2HRRTRAA5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ActionUtilities/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ActionUtilities.macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appracatappra.ActionUtilities;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2D9C54AF1FD1BD3C00A19940 /* Debug */ = {
+		2D9FFED420113DB100A41E3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y2HRRTRAA5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ActionUtilitiesRelease/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appracatappra.ActionUtilitiesRelease;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2D9C54B01FD1BD3C00A19940 /* Release */ = {
+		2D9FFED520113DB100A41E3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D9FFEDB2011449A00A41E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D9FFEDC2011449A00A41E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D9FFEE02011513C00A41E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D9FFEE12011513C00A41E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D9FFEE52011539F00A41E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D9FFEE62011539F00A41E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2D9FFEEA201155BD00A41E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D9FFEEB201155BD00A41E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DA6425020110BC1001E8E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -499,15 +1048,58 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ActionUtilitiesRelease/Info.plist;
+				INFOPLIST_FILE = ActionUtilities.watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appracatappra.ActionUtilitiesRelease;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		2DA6425120110BC1001E8E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ActionUtilities.watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		2DA6425B201117F3001E8E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DA6425C201117F3001E8E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -531,9 +1123,71 @@
 			};
 			name = Release;
 		};
+		2DDA3A6D2010F1A70094D28A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ActionUtilities.iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DDA3A6E2010F1A70094D28A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y2HRRTRAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ActionUtilities.iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appracatappra.ActionUtilities-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D2CCE272010083900335A9D /* Build configuration list for PBXNativeTarget "ActionUtilities.tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2CCE282010083900335A9D /* Debug */,
+				2D2CCE292010083900335A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D2CCE3C2010114D00335A9D /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2CCE3D2010114D00335A9D /* Debug */,
+				2D2CCE3E2010114D00335A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D6CEA101FD07B2100A482D0 /* Build configuration list for PBXProject "ActionUtilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -543,29 +1197,92 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D6CEA1E1FD07B2100A482D0 /* Build configuration list for PBXNativeTarget "ActionUtilities" */ = {
+		2D9FFEBB2011242000A41E3B /* Build configuration list for PBXNativeTarget "ActionUtilities.macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D6CEA1F1FD07B2100A482D0 /* Debug */,
-				2D6CEA201FD07B2100A482D0 /* Release */,
+				2D9FFEBC2011242000A41E3B /* Debug */,
+				2D9FFEBD2011242000A41E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D9C54AE1FD1BD3C00A19940 /* Build configuration list for PBXNativeTarget "ActionUtilitiesRelease" */ = {
+		2D9FFED320113DB100A41E3B /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D9C54AF1FD1BD3C00A19940 /* Debug */,
-				2D9C54B01FD1BD3C00A19940 /* Release */,
+				2D9FFED420113DB100A41E3B /* Debug */,
+				2D9FFED520113DB100A41E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DD971F11FD1B3150003E0E9 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal" */ = {
+		2D9FFEDA2011449A00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFEDB2011449A00A41E3B /* Debug */,
+				2D9FFEDC2011449A00A41E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D9FFEDF2011513C00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFEE02011513C00A41E3B /* Debug */,
+				2D9FFEE12011513C00A41E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D9FFEE42011539F00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFEE52011539F00A41E3B /* Debug */,
+				2D9FFEE62011539F00A41E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D9FFEE9201155BD00A41E3B /* Build configuration list for PBXAggregateTarget "APIDocs.macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFEEA201155BD00A41E3B /* Debug */,
+				2D9FFEEB201155BD00A41E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA6424F20110BC1001E8E66 /* Build configuration list for PBXNativeTarget "ActionUtilities.watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6425020110BC1001E8E66 /* Debug */,
+				2DA6425120110BC1001E8E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA6425A201117F3001E8E66 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6425B201117F3001E8E66 /* Debug */,
+				2DA6425C201117F3001E8E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD971F11FD1B3150003E0E9 /* Build configuration list for PBXAggregateTarget "ActionUtilitiesUniversal.iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DD971F21FD1B3150003E0E9 /* Debug */,
 				2DD971F31FD1B3150003E0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDA3A6C2010F1A70094D28A /* Build configuration list for PBXNativeTarget "ActionUtilities.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDA3A6D2010F1A70094D28A /* Debug */,
+				2DDA3A6E2010F1A70094D28A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

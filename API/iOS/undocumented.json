@@ -1,0 +1,810 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 15,
+      "symbol": "AppleHardwareType.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 17,
+      "symbol": "AppleHardwareType.iPhone",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 18,
+      "symbol": "AppleHardwareType.iPhone3G",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 19,
+      "symbol": "AppleHardwareType.iPhone3GS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 20,
+      "symbol": "AppleHardwareType.iPhone4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 21,
+      "symbol": "AppleHardwareType.iPhone4S",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 22,
+      "symbol": "AppleHardwareType.iPhone5",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 23,
+      "symbol": "AppleHardwareType.iPhone5C",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 24,
+      "symbol": "AppleHardwareType.iPhone5S",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 25,
+      "symbol": "AppleHardwareType.iPhone6",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 26,
+      "symbol": "AppleHardwareType.iPhone6Plus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 27,
+      "symbol": "AppleHardwareType.iPhone6S",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 28,
+      "symbol": "AppleHardwareType.iPhone6SPlus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 29,
+      "symbol": "AppleHardwareType.iPhoneSE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 30,
+      "symbol": "AppleHardwareType.iPhone7",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 31,
+      "symbol": "AppleHardwareType.iPhone7Plus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 32,
+      "symbol": "AppleHardwareType.iPhone8",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 33,
+      "symbol": "AppleHardwareType.iPhone8Plus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 34,
+      "symbol": "AppleHardwareType.iPhoneX",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 36,
+      "symbol": "AppleHardwareType.iPad",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 37,
+      "symbol": "AppleHardwareType.iPad2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 38,
+      "symbol": "AppleHardwareType.iPadMini",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 39,
+      "symbol": "AppleHardwareType.iPad3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 40,
+      "symbol": "AppleHardwareType.iPad4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 41,
+      "symbol": "AppleHardwareType.iPadAir",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 42,
+      "symbol": "AppleHardwareType.iPadMini2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 43,
+      "symbol": "AppleHardwareType.iPadMini3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 44,
+      "symbol": "AppleHardwareType.iPadMini4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 45,
+      "symbol": "AppleHardwareType.iPadAir2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 46,
+      "symbol": "AppleHardwareType.iPadPro12In",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 47,
+      "symbol": "AppleHardwareType.iPadPro9In",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 48,
+      "symbol": "AppleHardwareType.iPad5thGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 49,
+      "symbol": "AppleHardwareType.iPadPro12In2ndGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 50,
+      "symbol": "AppleHardwareType.iPadPro10In",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 52,
+      "symbol": "AppleHardwareType.iPodTouch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 53,
+      "symbol": "AppleHardwareType.iPodTouch2ndGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 54,
+      "symbol": "AppleHardwareType.iPodTouch3rdGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 55,
+      "symbol": "AppleHardwareType.iPodTouch4thGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 56,
+      "symbol": "AppleHardwareType.iPodTouch5thGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 57,
+      "symbol": "AppleHardwareType.iPodTouch6thGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 59,
+      "symbol": "AppleHardwareType.appleTV2ndGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 60,
+      "symbol": "AppleHardwareType.appleTV3rdGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 61,
+      "symbol": "AppleHardwareType.appleTV4thGen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 62,
+      "symbol": "AppleHardwareType.appleTV4K",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 64,
+      "symbol": "AppleHardwareType.airPods",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 66,
+      "symbol": "AppleHardwareType.appleWatch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 67,
+      "symbol": "AppleHardwareType.appleWatchSeries1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 68,
+      "symbol": "AppleHardwareType.appleWatchSeries2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 69,
+      "symbol": "AppleHardwareType.appleWatchSeries3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 71,
+      "symbol": "AppleHardwareType.homePod",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 73,
+      "symbol": "AppleHardwareType.macBookRetina12In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 74,
+      "symbol": "AppleHardwareType.macBookRetina12In2016",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 75,
+      "symbol": "AppleHardwareType.macBookRetina12In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 76,
+      "symbol": "AppleHardwareType.macBook13In2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 77,
+      "symbol": "AppleHardwareType.macBook13InLate2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 78,
+      "symbol": "AppleHardwareType.macBook13In2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 80,
+      "symbol": "AppleHardwareType.macBookAir13In2015To2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 81,
+      "symbol": "AppleHardwareType.macBookAir11In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 82,
+      "symbol": "AppleHardwareType.macBookAir13In2013To2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 83,
+      "symbol": "AppleHardwareType.macBookAir11In2013To2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 84,
+      "symbol": "AppleHardwareType.macBookAir13In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 85,
+      "symbol": "AppleHardwareType.macBookAir11In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 86,
+      "symbol": "AppleHardwareType.macBookAir13In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 87,
+      "symbol": "AppleHardwareType.macBookAir11In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 88,
+      "symbol": "AppleHardwareType.macBookAir13In2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 89,
+      "symbol": "AppleHardwareType.macBookAir11In2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 90,
+      "symbol": "AppleHardwareType.macBookAir2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 92,
+      "symbol": "AppleHardwareType.macBookPro15In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 93,
+      "symbol": "AppleHardwareType.macBookPro13In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 94,
+      "symbol": "AppleHardwareType.macBookPro15In2016",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 95,
+      "symbol": "AppleHardwareType.macBookPro13In2016",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 96,
+      "symbol": "AppleHardwareType.macBookProRetina15In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 97,
+      "symbol": "AppleHardwareType.macBookProRetina13In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 98,
+      "symbol": "AppleHardwareType.macBookProRetina15In2013To2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 99,
+      "symbol": "AppleHardwareType.macBookProRetina13In2013To2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 100,
+      "symbol": "AppleHardwareType.macBookProRetina13In2012To2013",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 101,
+      "symbol": "AppleHardwareType.macBookProRetina15In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 102,
+      "symbol": "AppleHardwareType.macBookPro15In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 103,
+      "symbol": "AppleHardwareType.macBookPro13In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 104,
+      "symbol": "AppleHardwareType.macBookPro17In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 105,
+      "symbol": "AppleHardwareType.macBookPro15In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 106,
+      "symbol": "AppleHardwareType.macBookPro13In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 107,
+      "symbol": "AppleHardwareType.macBookPro17In2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 108,
+      "symbol": "AppleHardwareType.macBookPro13In2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 109,
+      "symbol": "AppleHardwareType.macBookPro17In2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 110,
+      "symbol": "AppleHardwareType.macBookPro15In2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 111,
+      "symbol": "AppleHardwareType.macBookPro13In2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 113,
+      "symbol": "AppleHardwareType.macMini2006",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 114,
+      "symbol": "AppleHardwareType.macMini2007",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 115,
+      "symbol": "AppleHardwareType.macMini2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 116,
+      "symbol": "AppleHardwareType.macMini2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 117,
+      "symbol": "AppleHardwareType.macMini2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 118,
+      "symbol": "AppleHardwareType.macMini2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 119,
+      "symbol": "AppleHardwareType.macMini2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 121,
+      "symbol": "AppleHardwareType.macPro2013",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 122,
+      "symbol": "AppleHardwareType.macPro2010To2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 123,
+      "symbol": "AppleHardwareType.macPro2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 125,
+      "symbol": "AppleHardwareType.iMac21In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 126,
+      "symbol": "AppleHardwareType.iMacRetina4K21In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 127,
+      "symbol": "AppleHardwareType.iMacRetina5K27In2017",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 128,
+      "symbol": "AppleHardwareType.iMac21In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 129,
+      "symbol": "AppleHardwareType.iMacRetina4K21In2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 130,
+      "symbol": "AppleHardwareType.iMacRetina5K27In2014To2015",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 131,
+      "symbol": "AppleHardwareType.iMac21In2014",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 132,
+      "symbol": "AppleHardwareType.iMac21In2013",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 133,
+      "symbol": "AppleHardwareType.iMac27In2013",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 134,
+      "symbol": "AppleHardwareType.iMac21In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 135,
+      "symbol": "AppleHardwareType.iMac27In2012",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 136,
+      "symbol": "AppleHardwareType.iMac21In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 137,
+      "symbol": "AppleHardwareType.iMac27In2011",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 138,
+      "symbol": "AppleHardwareType.iMac21In2009To2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 139,
+      "symbol": "AppleHardwareType.iMac27In2009To2010",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "line": 140,
+      "symbol": "AppleHardwareType.iMac20InOr24In2009",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Utilities/ACNotify.swift",
+      "line": 12,
+      "symbol": "ACNotify",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Utilities/ACNotify.swift",
+      "line": 21,
+      "symbol": "ACNotify.showMessage(text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities"
+}
