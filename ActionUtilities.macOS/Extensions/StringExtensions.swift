@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-/*
+/**
  Extends `String` to support the Action Data controls and adds convenience methods for working with `NSImage` and `NSColor` properties in a `Codable`, `Encodable` or `Decodable` class.
  */
 extension String {

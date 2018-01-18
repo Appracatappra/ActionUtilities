@@ -14,6 +14,20 @@ import SystemConfiguration
 
 /**
  Defines a set of convenience properties and functions when working on Apple devices, such as checking the device model name (`iPhone10,3`), getting the device type (`iPhoneX`), getting the OS version, the current device orientation and internet connection state.
+ 
+ ## Examples:
+ 
+ ```swift
+ if HardwareInformation.deviceType == .iPhoneX {
+ // The app is running on an iPhone X
+ ...
+ }
+ 
+ if HardwareInformation.isConnectedToNetwork {
+ // The device has an internet connection
+ ...
+ }
+ ```
  */
 public class HardwareInformation {
     

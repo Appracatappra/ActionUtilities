@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-/*
+/**
  Extends `UIImage` to support the Action Data controls and adds convenience methods for working with image properties in a `Codable`, `Encodable` or `Decodable` class.
  
 */

@@ -13,7 +13,7 @@
     <a title="Extensions  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (25% documented)</p>
+        <p><a href="index.html"> Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -90,7 +90,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Extends <code>String</code> to support the Action Data controls and adds convenience methods for working with <code>UIImage</code> and <code>UIColor</code> properties in a <code>Codable</code>, <code>Encodable</code> or <code>Decodable</code> class.</p>
+
                         <a href="Extensions/String.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -121,7 +122,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Extends <code>UIImage</code> to support the Action Data controls and adds convenience methods for working with image properties in a <code>Codable</code>, <code>Encodable</code> or <code>Decodable</code> class.</p>
+
                         <a href="Extensions/UIImage.html" class="slightly-smaller">See more</a>
                       </div>
                     </section>
@@ -144,7 +146,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Extends <code>UIColor</code> to support the Action Data controls and adds convenience methods for working with colors in a <code>Codable</code>, <code>Encodable</code> or <code>Decodable</code> class.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign a color from a string</span>
+<span class="k">let</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">~=</span> <span class="s">"#FF0000"</span>
+
+<span class="c1">// Initialize a color from a hex string</span>
+<span class="k">let</span> <span class="nv">green</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">fromHex</span><span class="p">:</span> <span class="s">"00FF00"</span><span class="p">)</span>
+
+<span class="c1">// Convert color to a hex string</span>
+<span class="k">let</span> <span class="nv">white</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="o">.</span><span class="nf">toHex</span><span class="p">()</span>
+</code></pre>
+
                         <a href="Extensions/UIColor.html" class="slightly-smaller">See more</a>
                       </div>
                     </section>
@@ -167,7 +180,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Extends <code>Data</code> to support the Action Data controls and adds convenience methods for working with data properties in a <code>Codable</code>, <code>Encodable</code> or <code>Decodable</code> class.</p>
+
                         <a href="Extensions/Data.html" class="slightly-smaller">See more</a>
                       </div>
                     </section>

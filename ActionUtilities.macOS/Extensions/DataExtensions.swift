@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-/*
+/**
  Extends `Data` to support the Action Data controls and adds convenience methods for working with data properties in a `Codable`, `Encodable` or `Decodable` class.
  */
 extension Data {

@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (28% documented)</p>
+        <p><a href="index.html"> Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -75,11 +75,13 @@
 
 <p><strong>Action Utilities</strong> provide several useful functions that are common across many apps written in Swift such as getting the version of the OS installed on the device the app is running on, testing to see if an app can connect to the internet and getting the type of device the app is running on (for example <code>iPhoneX</code>).</p>
 
+<p><strong>Action Utilities</strong> are support on iOS, tvOS, watchOS and macOS.</p>
+
 <p><a name="Action-Extensions"></a></p>
 <h2 id='action-extensions' class='heading'>Action Extensions</h2>
 
-<p><strong>Action Extensions</strong> provide several useful features to common, built-in Cocoa, Cocoa Touch and Swift data types such as converting <code>UIColor</code> to/from hex strings (for example <code>#FF0000</code>), creating <code>UIImage</code> instances from Base64 encoded strings stored in <code>Data</code> or <code>NSData</code> objects and encoding <code>UIImages</code> as Base64 strings or <code>Data</code> objects.</p>
-<h4 id='examples' class='heading'>Examples:</h4>
+<p><strong>Action Extensions</strong> provide several useful features to common, built-in Cocoa, Cocoa Touch and Swift data types such as converting <code>UIColor</code>/<code>NSColor</code> to/from hex strings (for example <code>#FF0000</code>), creating <code>UIImage</code>/<code>NSImage</code> instances from Base64 encoded strings stored in <code>Data</code> or <code>NSData</code> objects and encoding <code>UIImages</code>/<code>NSImages</code> as Base64 strings or <code>Data</code> objects.</p>
+<h4 id='ios-examples' class='heading'>iOS Examples:</h4>
 <pre class="highlight swift"><code><span class="c1">// Assign a color from a string</span>
 <span class="k">let</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">~=</span> <span class="s">"#FF0000"</span>
 
@@ -89,19 +91,31 @@
 <span class="c1">// Convert color to a hex string</span>
 <span class="k">let</span> <span class="nv">white</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="o">.</span><span class="nf">toHex</span><span class="p">()</span>
 </code></pre>
+<h4 id='macos-examples' class='heading'>macOS Examples:</h4>
+<pre class="highlight swift"><code><span class="c1">// Assign a color from a string</span>
+<span class="k">let</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">NSColor</span> <span class="o">~=</span> <span class="s">"#FF0000"</span>
+
+<span class="c1">// Initialize a color from a hex string</span>
+<span class="k">let</span> <span class="nv">green</span> <span class="o">=</span> <span class="kt">NSColor</span><span class="p">(</span><span class="nv">fromHex</span><span class="p">:</span> <span class="s">"00FF00"</span><span class="p">)</span>
+
+<span class="c1">// Convert color to a hex string</span>
+<span class="k">let</span> <span class="nv">white</span> <span class="o">=</span> <span class="kt">NSColor</span><span class="o">.</span><span class="n">white</span><span class="o">.</span><span class="nf">toHex</span><span class="p">()</span>
+</code></pre>
 
 <p><a name="General-Utilities"></a></p>
 <h2 id='general-utilities' class='heading'>General Utilities</h2>
 
 <p><strong>General Utilities</strong> provide several, general utility classes to handle thing such as simple popup notifications.</p>
 <h3 id='examples' class='heading'>Examples:</h3>
-<pre class="highlight swift"><code><span class="kt">ACNotify</span><span class="o">.</span><span class="nf">showMessage</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"Hello World!"</span><span class="p">)</span>
+<pre class="highlight swift"><code><span class="c1">// Display popup message at the bottom of the screen</span>
+<span class="kt">ACNotify</span><span class="o">.</span><span class="nf">showMessage</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="s">"Hello World!"</span><span class="p">)</span>
 </code></pre>
 
 <p><a name="Hardware-Utilities"></a></p>
 <h2 id='hardware-utilities' class='heading'>Hardware Utilities</h2>
 
 <p><strong>Hardware Utilities</strong> provide commonly used information about the device an app is running on such as the device type (for example <code>iPhoneX</code>), the OS version (for example <code>iOS 11.1</code>) and if the app can connect to the internet.</p>
+<h3 id='examples' class='heading'>Examples:</h3>
 <pre class="highlight swift"><code><span class="k">if</span> <span class="kt">HardwareInformation</span><span class="o">.</span><span class="n">deviceType</span> <span class="o">==</span> <span class="o">.</span><span class="n">iPhoneX</span> <span class="p">{</span>
     <span class="c1">// The app is running on an iPhone X</span>
     <span class="o">...</span>

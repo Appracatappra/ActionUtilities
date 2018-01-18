@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+/**
+ `ACNotify` provides a simple Toast-like popup notification that is displayed at the bottom of the device's screen for 1 second before disappearing.
+ 
+ ## Example:
+ ```swift
+ // Display popup notification
+ ACNotify.showMessage(text: "Hello World!")
+ ```
+ */
 public class ACNotify {
     
     // MARK: - Private variables
@@ -18,6 +27,16 @@ public class ACNotify {
     static var view: UIView?
     
     // MARK: - Functions
+    /**
+     Displays a simple Toast-like popup notification at the bottom of the device's screen for 1 second before disappearing.
+     
+     ## Example:
+     ```swift
+     // Display popup notification
+     ACNotify.showMessage(text: "Hello World!")
+     ```
+     - Parameter text: The message to display in the popup.
+    */
     public static func showMessage(text: String) {
         
         // Create a new button as the "body" of the toast popup

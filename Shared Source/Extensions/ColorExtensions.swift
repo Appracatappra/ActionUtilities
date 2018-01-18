@@ -9,8 +9,21 @@
 import Foundation
 import UIKit
 
-/*
+/**
  Extends `UIColor` to support the Action Data controls and adds convenience methods for working with colors in a `Codable`, `Encodable` or `Decodable` class.
+ 
+ ## Examples:
+ 
+ ```swift
+ // Assign a color from a string
+ let color: UIColor ~= "#FF0000"
+ 
+ // Initialize a color from a hex string
+ let green = UIColor(fromHex: "00FF00")
+ 
+ // Convert color to a hex string
+ let white = UIColor.white.toHex()
+ ```
  */
 extension UIColor {
     

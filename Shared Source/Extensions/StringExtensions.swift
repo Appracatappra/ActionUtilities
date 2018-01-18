@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-/*
+/**
  Extends `String` to support the Action Data controls and adds convenience methods for working with `UIImage` and `UIColor` properties in a `Codable`, `Encodable` or `Decodable` class.
  */
 extension String {

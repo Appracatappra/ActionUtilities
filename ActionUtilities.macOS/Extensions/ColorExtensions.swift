@@ -9,6 +9,22 @@
 import Foundation
 import AppKit
 
+/**
+ Extends `NSColor` to support the Action Data controls and adds convenience methods for working with colors in a `Codable`, `Encodable` or `Decodable` class.
+ 
+ ## Examples:
+ 
+ ```swift
+ // Assign a color from a string
+ let color: NSColor ~= "#FF0000"
+ 
+ // Initialize a color from a hex string
+ let green = NSColor(fromHex: "00FF00")
+ 
+ // Convert color to a hex string
+ let white = NSColor.white.toHex()
+ ```
+ */
 extension NSColor {
     // MARK: - Custom Operators
     /**

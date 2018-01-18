@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (28% documented)</p>
+        <p><a href="index.html"> Docs</a> (98% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -91,6 +91,17 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Defines a set of convenience properties and functions when working on Apple devices, such as checking the device model name (<code>iPhone10,3</code>), getting the device type (<code>iPhoneX</code>), getting the OS version, the current device orientation and internet connection state.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="k">if</span> <span class="kt">HardwareInformation</span><span class="o">.</span><span class="n">deviceType</span> <span class="o">==</span> <span class="o">.</span><span class="n">iPhoneX</span> <span class="p">{</span>
+<span class="c1">// The app is running on an iPhone X</span>
+<span class="o">...</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="kt">HardwareInformation</span><span class="o">.</span><span class="n">isConnectedToNetwork</span> <span class="p">{</span>
+<span class="c1">// The device has an internet connection</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
 
                         <a href="Classes/HardwareInformation.html" class="slightly-smaller">See more</a>
                       </div>
