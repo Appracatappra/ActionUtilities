@@ -35,11 +35,11 @@ In **Xcode**, do the following:
 
 	![](Images/Intro04.png)
 
-You are now ready to use the **Action Utilities** suite in your app project. Include the `import ActionUtilities_xx` (where `xx` is the OS version of the framework included in the project) statement at the top of any class you want use a component from. For example:
+You are now ready to use the **Action Utilities** suite in your app project. Include the `import ActionUtilities` statement at the top of any class you want use a component from. For example:
 
 ```swift
 import UIKit
-import ActionUtilities_iOS
+import ActionUtilities
 
 class ViewController: UIViewController {
 

@@ -1,0 +1,11 @@
+framework module ActionUtilities {
+  umbrella header "ActionUtilities.h"
+
+  export *
+  module * { export * }
+}
+
+module ActionUtilities.Swift {
+    header "ActionUtilities-Swift.h"
+    requires objc
+}

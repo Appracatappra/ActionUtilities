@@ -1,19 +1,19 @@
 {
   "warnings": [
     {
-      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "file": "/Users/kmullins/Xcode Projects/ActionUtilities/SharedSource/Hardware/AppleHardwareType.swift",
       "line": 22,
       "symbol": "AppleHardwareType.unknown",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities/Shared Source/Hardware/AppleHardwareType.swift",
+      "file": "/Users/kmullins/Xcode Projects/ActionUtilities/SharedSource/Hardware/AppleHardwareType.swift",
       "line": 181,
       "symbol": "AppleHardwareType.macBookRetina12In2017",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/kmullins/Xcode Projects/GitHub/ActionUtilities"
+  "source_directory": "/Users/kmullins/Xcode Projects/ActionUtilities"
 }
