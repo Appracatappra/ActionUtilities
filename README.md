@@ -1,6 +1,8 @@
 # Action Utilities
 
-**Action Utilities** provide several useful functions that are common across many apps written in Swift such as getting the version of the OS installed on the device the app is running on, testing to see if an app can connect to the internet and getting the type of device the app is running on (for example `iPhoneX`).
+**Action Utilities** provide several useful functions that are common across many apps written in Swift and Xcode. These include features such as getting the version of the OS installed on the device the app is running on, testing to see if an app can connect to the internet and getting the device type (for example `iPhoneX`).
+
+Additionally, many built-in types (such as `UIColor`, `String` and `Data`) have been extended with useful features such as converting a color to and from a hex string and moving images easily between `Data` and `String` types to support Swift 4's `Codable` protocol.
 
 **Action Utilities** are support on iOS, tvOS, watchOS and macOS.
 
