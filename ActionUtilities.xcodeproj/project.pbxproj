@@ -92,6 +92,7 @@
 		2DA009B62017BBB5004A5F55 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA009B52017BBB5004A5F55 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DA009B82017BF20004A5F55 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA009B72017BF20004A5F55 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DA009BA2017BFA4004A5F55 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA009B92017BFA4004A5F55 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DCB835320190AD9009BEF01 /* ACNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB835220190AD9009BEF01 /* ACNotify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,8 @@
 		2DA009B52017BBB5004A5F55 /* ActionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionUtilities.h; sourceTree = "<group>"; };
 		2DA009B72017BF20004A5F55 /* ActionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionUtilities.h; sourceTree = "<group>"; };
 		2DA009B92017BFA4004A5F55 /* ActionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionUtilities.h; sourceTree = "<group>"; };
+		2DCB835120190ABA009BEF01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2DCB835220190AD9009BEF01 /* ACNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACNotify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,7 @@
 			children = (
 				2DA009B92017BFA4004A5F55 /* ActionUtilities.h */,
 				2DA009762017B433004A5F55 /* Info.plist */,
+				2DCB835020190A89009BEF01 /* Utilities */,
 				2DA0098F2017BA43004A5F55 /* Extensions */,
 			);
 			path = "ActionUtilities macOS";
@@ -273,6 +277,15 @@
 				2DA009942017BA60004A5F55 /* StringExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DCB835020190A89009BEF01 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DCB835120190ABA009BEF01 /* README.md */,
+				2DCB835220190AD9009BEF01 /* ACNotify.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,7 +526,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"iOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"iphoneos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"iOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"iphoneos\"\nROOT_URL=\"http://appracatappra.com/api/actionutilities/ios/\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\" --root-url \"${ROOT_URL}\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
 		};
 		2DA009C62017D00C004A5F55 /* Make Universal Library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -541,7 +554,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"watchOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"watchos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"watchOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"watchos\"\nROOT_URL=\"http://appracatappra.com/api/actionutilities/watchos/\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\" --root-url \"${ROOT_URL}\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
 		};
 		2DA009CC2017D13D004A5F55 /* Make Universal Library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -569,7 +582,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"tvOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"appletvos\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"tvOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"appletvos\"\nROOT_URL=\"http://appracatappra.com/api/actionutilities/tvos/\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\" --root-url \"${ROOT_URL}\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
 		};
 		2DA009D22017D214004A5F55 /* Make Library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -583,7 +596,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_TARGET=\"macOS\"\nDEVICE_OS=\"macosx\"\nUNIVERSAL_FRAMEWORKFOLDER=${PROJECT_NAME}Frameworks/${UNIVERSAL_TARGET}\n\n# Make sure the output directories exists\nmkdir -p \"${UNIVERSAL_FRAMEWORKFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"${PROJECT_NAME} ${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}/${PROJECT_NAME}.framework\" \"${UNIVERSAL_FRAMEWORKFOLDER}/${PROJECT_NAME}.framework\"\n\n# Step 3. Convenience step to open the project's directory in Finder\n# open \"${UNIVERSAL_FRAMEWORKFOLDER}/\"\n";
+			shellScript = "#!/bin/sh\n\n# Define Macros\nUNIVERSAL_TARGET=\"macOS\"\nDEVICE_OS=\"macosx\"\nUNIVERSAL_FRAMEWORKFOLDER=${PROJECT_NAME}Frameworks/${UNIVERSAL_TARGET}\nFRAMEWORK_VERSION=\"TRIAL_VERSION\"\n\n# Make sure the output directories exists\nmkdir -p \"${UNIVERSAL_FRAMEWORKFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\n# See: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html\nxcodebuild -target \"${PROJECT_NAME} ${UNIVERSAL_TARGET}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk ${DEVICE_OS}  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" OTHER_SWIFT_FLAGS=\"-D ${FRAMEWORK_VERSION}\" clean build\n\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}/${PROJECT_NAME}.framework\" \"${UNIVERSAL_FRAMEWORKFOLDER}/${PROJECT_NAME}.framework\"\n\n# Step 3. Convenience step to open the project's directory in Finder\n# open \"${UNIVERSAL_FRAMEWORKFOLDER}/\"\n";
 		};
 		2DA009D32017D39B004A5F55 /* Build API Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -597,7 +610,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"macOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"macosx\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
+			shellScript = "#!/bin/sh\n\n# Define macros\nAPI_TARGET=\"macOS\"\nAPI_OUTPUT=\"${PROJECT_DIR}/API/${API_TARGET}\"\nDEVICE_OS=\"macosx\"\nROOT_URL=\"http://appracatappra.com/api/actionutilities/macos/\"\n\n# Make sure the output directory exists\nmkdir -p \"${API_OUTPUT}\"\n\n# Move to project directory\ncd \"${PROJECT_DIR}\"\n\n# Create documentation with Jazzy\njazzy --output \"${API_OUTPUT}\" --sdk ${DEVICE_OS} --clean --xcodebuild-arguments -target,\"${PROJECT_NAME} ${API_TARGET}\" --module ${PROJECT_NAME} --author \"Appracatappra, LLC\" --root-url \"${ROOT_URL}\"\n\n# Open project directory\nopen \"${API_OUTPUT}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -647,6 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCB835320190AD9009BEF01 /* ACNotify.swift in Sources */,
 				2DA009B22017BAAF004A5F55 /* StringExtensions.swift in Sources */,
 				2DA009B12017BAAF004A5F55 /* ImageExtensions.swift in Sources */,
 				2DA009A02017BA79004A5F55 /* HardwareInformation.swift in Sources */,

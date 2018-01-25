@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		olDeuVHrw5ydrb+B0Y/qd1i09eU=
+		JEzywxxftf8JuxoHBYz2fGEIPTE=
 		</data>
 		<key>Resources/TrimFramework.sh</key>
 		<data>
@@ -33,14 +33,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AVaTjMdXe+VTZRd9oxVaafBqtTHeQvniipRhGleHIlA=
+			uznLgWwBwF+mry/uu7zUzRE/sfFaXMrAD5a50QTTrgA=
 			</data>
 		</dict>
 		<key>Modules/ActionUtilities.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N7okR9h7eYDgvGuofnvHBwTryqZyZUWzMq27uJS5Chg=
+			06HAjV06ZjWGvewZFTuG0zJIO753z/TNy5kok8JqOnw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pEeMjvvz3GSsGEWAtqgjbLd0hRbCrqXhHuANg+Ckm60=
+			dwCC3aS7RzRBl+ESJ7gt2teqJaTEqIPVyYhjmTkV79o=
 			</data>
 		</dict>
 		<key>Resources/TrimFramework.sh</key>

@@ -12,7 +12,7 @@ import UIKit
 /**
  Extends `UIColor` to support the Action Data controls and adds convenience methods for working with colors in a `Codable`, `Encodable` or `Decodable` class.
  
- ## Examples:
+ ## iOS, tvOS and watchOS Examples:
  
  ```swift
  // Assign a color from a string
@@ -37,6 +37,12 @@ extension UIColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in iOS, tvOS or watchOS
+     let color: UIColor ~= "#FF0000"
+     ```
      */
     public static func ~= ( left: inout UIColor, right: String) {
         left = right.uiColor!
@@ -52,6 +58,12 @@ extension UIColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in iOS, tvOS or watchOS
+     let color = UIColor(fromHex: "#FF0000")
+     ```
      
      - Parameter hex: The hex value to convert to a `UIColor`.
      */
@@ -98,6 +110,13 @@ extension UIColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in iOS, tvOS or watchOS
+     let colorHex = UIColor.red.toHex();
+     let colorHexShort = UIColor.red.toHex(withPrefix: false, includeAlpha: false);
+     ```
      
      - Parameters:
      - hash: If `true`, the string will be prefixed with the `#` character.

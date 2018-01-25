@@ -15,6 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">ActionUtilities Docs</a> (98% documented)</p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fappracatappra%2Ecom%2Fapi%2Factionutilities%2Fwatchos%2Fdocsets%2FActionUtilities%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -70,6 +71,11 @@
           <section class="section">
             <h1>UIImage</h1>
             <p>Extends <code>UIImage</code> to support the Action Data controls and adds convenience methods for working with image properties in a <code>Codable</code>, <code>Encodable</code> or <code>Decodable</code> class.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign aa image from Base 64 encoded String in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageString</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span><span class="o">.</span><span class="nf">toString</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="o">~=</span> <span class="n">imageString</span>
+</code></pre>
 
           </section>
           <section class="section task-group-section">
@@ -127,7 +133,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the <code>UIImage</code> from the given <code>String</code> Instance.</p>
+                        <p>Sets the <code>UIImage</code> from the given Base 64 encoded <code>String</code> instance.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign an image from Base 64 encoded String in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageString</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span><span class="o">.</span><span class="nf">toString</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="o">~=</span> <span class="n">imageString</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -155,6 +166,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Sets the <code>UIImage</code> from the given <code>Data</code> instance.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign an image from Base 64 encoded Data in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageData</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span><span class="o">.</span><span class="nf">toData</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="o">~=</span> <span class="n">imageData</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -193,6 +209,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Converts the <code>UIImage</code> to a <code>String</code> representation encoded in Base 64.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign an image to Base 64 encoded String in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageString</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span><span class="o">.</span><span class="nf">toString</span><span class="p">()</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -242,7 +262,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Converst the <code>UIImage</code> to a <code>Data</code> representation.</p>
+                        <p>Converts the <code>UIImage</code> to a <code>Data</code> representation.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign an image to Base 64 encoded Data in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageData</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span><span class="o">.</span><span class="nf">toString</span><span class="p">()</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -304,6 +328,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Creates a new <code>UIImage</code> instance from a Base 64 encoded string.</p>
+<h2 id='examples' class='heading'>Examples:</h2>
+<pre class="highlight swift"><code><span class="c1">// Assign an image from Base 64 encoded String in iOS, tvOS or watchOS</span>
+<span class="k">let</span> <span class="nv">imageString</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"Background.png"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">image</span> <span class="o">=</span> <span class="kt">UIImage</span><span class="p">(</span><span class="nv">fromString</span><span class="p">:</span> <span class="n">imageString</span><span class="p">)</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -341,7 +370,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2018-01-23)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Appracatappra, LLC</a>. All rights reserved. (Last updated: 2018-01-25)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -11,6 +11,12 @@ import AppKit
 
 /**
  Extends `String` to support the Action Data controls and adds convenience methods for working with `NSImage` and `NSColor` properties in a `Codable`, `Encodable` or `Decodable` class.
+ 
+ ## Examples:
+ ```swift
+ // Get the hex representation of a color in macOS.
+ let hex: String ~= NSColor.white
+ ```
  */
 extension String {
     
@@ -23,12 +29,26 @@ extension String {
      * `bb` - Specifies the blue component as a hex value in the range 00 to FF.
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
+     ## Examples:
+     ```swift
+     // Get the hex representation of a color in macOS.
+     let hex: String ~= NSColor.white
+     ```
+     
      */
     public static func ~= ( left: inout String, right: NSColor) {
         left = right.toHex()
     }
     
-    /// Sets the `String` from the given `NSImage` where the image is converted to a PNG representation and Base 64 encoded.
+    /**
+     Sets the `String` from the given `NSImage` where the image is converted to a PNG representation and Base 64 encoded.
+     
+     ## Examples:
+     ```swift
+     // Get the Base 64 representation of an image in macOS.
+     let hex: String ~= NSImage(named: "Background.png")
+     ```
+    */
     public static func ~= ( left: inout String, right: NSImage) {
         left = right.toString()
     }
@@ -41,13 +61,29 @@ extension String {
      * `bb` - Specifies the blue component as a hex value in the range 00 to FF.
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
+     ## Examples:
+     ```swift
+     // Get the hex representation of a color in macOS.
+     let hex: String ~= NSColor.white
+     let color = hex.nsColor
+     ```
+     
      The hex string can optionally start with the prefix of `#`. If the `String` cannot be converted to a `NSImage`, `nil` is returned.
      */
     public var nsColor: NSColor? {
         return NSColor(fromHex: self)
     }
     
-    /// If the `String` contains a Base 64 encoded representation of an image it is returns as a `NSImage`, else `nil` is returned.
+    /**
+     If the `String` contains a Base 64 encoded representation of an image it is returns as a `NSImage`, else `nil` is returned.
+     
+     ## Examples:
+     ```swift
+     // Get the Base 64 representation of an macOS.
+     let hex: String ~= NSImage(named: "Background.png")
+     let image = hex.nsImage
+     ```
+     */
     public var nsImage: NSImage? {
         return NSImage(fromString: self)
     }
@@ -61,6 +97,12 @@ extension String {
      * `bb` - Specifies the blue component as a hex value in the range 00 to FF.
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
+     ## Examples:
+     ```swift
+     // Get the hex representation of a color in macOS.
+     let hex = String(fromColor: NSColor.white)
+     ```
+     
      - Parameter color: The given `NSColor` to convert to a hex string.
      */
     public init(fromColor color: NSColor) {
@@ -69,6 +111,12 @@ extension String {
     
     /**
      Initializes a `String` instance from a given `NSImage` where the image is converted to a PNG representation and Base 64 encoded.
+     
+     ## Examples:
+     ```swift
+     // Get the Base 64 representation of an image in macOS.
+     let hex = String(fromImage: NSImage(named: "Background.png"))
+     ```
      */
     public init(fromImage image: NSImage) {
         self = image.toString()
@@ -76,6 +124,13 @@ extension String {
     
     /**
      Returns a pretty-printed type name (minus the module name) for the given value.
+     
+     ## Example:
+     ```swift
+     // Assings a pretty type name
+     let name = String.typeName(of: "<module>")
+     ```
+     
      - Parameter value: The value to get the type name of.
      - Returns: The type name minus the module name.
      */
@@ -100,6 +155,14 @@ extension String {
     /**
      Returns the draw height of the string in the given font constrained to the given width.
      
+     ## Example:
+     ```swift
+     // Get a string height in macOS
+     let font = NSFont.systemFont(ofSize: 34, weight: NSFontWeightThin)
+     let text = "Hello World"
+     let height = text.height(withConstrainedWidth: 250, font: font)
+     ```
+     
      - Parameters:
      - width: The pixel width to constrain the string to.
      - font: The font that the string will be drawn in.
@@ -116,6 +179,14 @@ extension String {
     /**
      Returns the draw width of the string in the given font constrained to the given height.
      
+     ## Example:
+     ```swift
+     // Get a string height in macOS
+     let font = NSFont.systemFont(ofSize: 34, weight: NSFontWeightThin)
+     let text = "Hello World"
+     let height = text.width(withConstrainedHeight: 50, font: font)
+     ```
+     
      - Parameters:
      - height: The pixel height to constrain the string to.
      - font: The font that the string will be drawn in.
@@ -131,6 +202,14 @@ extension String {
     
     /**
      Returns the drawing bounds of the string in the given font constrained to the given maximum bounds.
+     
+     ## Example:
+     ```swift
+     // Get a string height in iOS, tvOS and watchOS
+     let font = NSFont.systemFont(ofSize: 34, weight: NSFontWeightThin)
+     let text = "Hello World"
+     let bounds = text.bounds(withConstrainedSize: GGSize(width: 250, height: 50), font: font)
+     ```
      
      - Parameters:
      - size: The maximum pixel width and height on the string.

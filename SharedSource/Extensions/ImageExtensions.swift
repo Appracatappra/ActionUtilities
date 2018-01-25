@@ -12,6 +12,12 @@ import UIKit
 /**
  Extends `UIImage` to support the Action Data controls and adds convenience methods for working with image properties in a `Codable`, `Encodable` or `Decodable` class.
  
+ ## Examples:
+ ```swift
+ // Assign aa image from Base 64 encoded String in iOS, tvOS or watchOS
+ let imageString = UIImage(named: "Background.png").toString()
+ let image: UIImage ~= imageString
+ ```
 */
 extension UIImage {
 
@@ -28,7 +34,14 @@ extension UIImage {
     
     // MARK: - Custom Operators
     /**
-     Sets the `UIImage` from the given `String` Instance.
+     Sets the `UIImage` from the given Base 64 encoded `String` instance.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded String in iOS, tvOS or watchOS
+     let imageString = UIImage(named: "Background.png").toString()
+     let image: UIImage ~= imageString
+     ```
      */
     public static func ~= ( left: inout UIImage, right: String) {
         left = right.uiImage!
@@ -36,6 +49,13 @@ extension UIImage {
     
     /**
      Sets the `UIImage` from the given `Data` instance.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded Data in iOS, tvOS or watchOS
+     let imageData = UIImage(named: "Background.png").toData()
+     let image: UIImage ~= imageData
+     ```
      */
     public static func ~= ( left: inout UIImage, right: Data) {
         left = right.uiImage!
@@ -44,6 +64,12 @@ extension UIImage {
     // MARK: - Public Functions
     /**
      Converts the `UIImage` to a `String` representation encoded in Base 64.
+     
+     ## Examples:
+     ```swift
+     // Assign an image to Base 64 encoded String in iOS, tvOS or watchOS
+     let imageString = UIImage(named: "Background.png").toString()
+     ```
      
      - Parameter imageRepresentation: Determines the representation that will be used when converting the image. The default is `pngRepresentation`.
      
@@ -67,7 +93,13 @@ extension UIImage {
     }
     
     /**
-     Converst the `UIImage` to a `Data` representation.
+     Converts the `UIImage` to a `Data` representation.
+     
+     ## Examples:
+     ```swift
+     // Assign an image to Base 64 encoded Data in iOS, tvOS or watchOS
+     let imageData = UIImage(named: "Background.png").toString()
+     ```
      
      - Parameter imageRepresentation: Determins the representation that will be used when converting the image. The default is `pngRepresentation`.
      
@@ -92,6 +124,13 @@ extension UIImage {
     // MARK: - Initializers
     /**
      Creates a new `UIImage` instance from a Base 64 encoded string.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded String in iOS, tvOS or watchOS
+     let imageString = UIImage(named: "Background.png")
+     let image = UIImage(fromString: imageString)
+     ```
      
      - Parameter value: A Base 64 encoded `String` representing an image.
      */

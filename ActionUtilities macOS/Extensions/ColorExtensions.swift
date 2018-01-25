@@ -36,6 +36,12 @@ extension NSColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in macOS
+     let color: NSColor ~= "#FF0000"
+     ```
      */
     public static func ~= ( left: inout NSColor, right: String) {
         left = right.nsColor!
@@ -51,6 +57,12 @@ extension NSColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in macOS
+     let color = NSColor(fromHex: "#FF0000")
+     ```
      
      - Parameter hex: The hex value to convert to a `UIColor`.
      */
@@ -97,6 +109,13 @@ extension NSColor {
      * `aa` - Specifies the alpha component as a hex value in the range 00 to FF.
      
      The hex string can optionally start with the prefix of `#`.
+     
+     ## Examples:
+     ```swift
+     // Assign a color from a string in macOS
+     let colorHex = NSColor.red.toHex();
+     let colorHexShort = NSColor.red.toHex(withPrefix: false, includeAlpha: false);
+     ```
      
      - Parameters:
      - hash: If `true`, the string will be prefixed with the `#` character.

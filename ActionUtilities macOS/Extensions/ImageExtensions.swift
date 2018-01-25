@@ -11,6 +11,7 @@ import AppKit
 
 /**
  Extends `NSBitmapImageRep` to support the Action Data controls and adds convenience methods for working with image properties in a `Codable`, `Encodable` or `Decodable` class.
+ 
  */
 extension NSBitmapImageRep {
     
@@ -28,10 +29,24 @@ extension NSBitmapImageRep {
 /**
  Extends `NSImage` to support the Action Data controls and adds convenience methods for working with image properties in a `Codable`, `Encodable` or `Decodable` class.
  
+ ## Examples:
+ ```swift
+ // Assign aa image from Base 64 encoded String in macOS
+ let imageString = NSImage(named: "Background.png").toString()
+ let image: NSImage ~= imageString
+ ```
  */
 extension NSImage {
     
-    /// Returns the image as data in the png format.
+    /**
+     Returns the image as data in the png format.
+     
+     ## Example:
+     ```swift
+     // Get png Data from image
+     let data = NSImage(named: "Background.png").pngData
+     ```
+    */
     public var pngData: Data? {
         if let tiffData = tiffRepresentation {
             if let bitmap = NSBitmapImageRep(data: tiffData) {
@@ -41,7 +56,15 @@ extension NSImage {
         return nil
     }
     
-    /// Returns the image as data in the jpeg format.
+    /**
+     Returns the image as data in the jpeg format.
+     
+     ## Example:
+     ```swift
+     // Get jpeg Data from image
+     let data = NSImage(named: "Background.png").jpgData
+     ```
+     */
     public var jpgData: Data? {
         if let tiffData = tiffRepresentation {
             if let bitmap = NSBitmapImageRep(data: tiffData) {
@@ -64,6 +87,13 @@ extension NSImage {
     // MARK: - Custom Operators
     /**
      Sets the `NSImage` from the given `String` Instance.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded String in macOS
+     let imageString = NSImage(named: "Background.png").toString()
+     let image: NSImage ~= imageString
+     ```
      */
     public static func ~= ( left: inout NSImage, right: String) {
         left = right.nsImage!
@@ -71,6 +101,13 @@ extension NSImage {
     
     /**
      Sets the `NSImage` from the given `Data` instance.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded Data in macOS
+     let imageData = NSImage(named: "Background.png").toData()
+     let image: NSImage ~= imageData
+     ```
      */
     public static func ~= ( left: inout NSImage, right: Data) {
         left = right.nsImage!
@@ -79,6 +116,12 @@ extension NSImage {
     // MARK: - Public Functions
     /**
      Converts the `NSImage` to a `String` representation encoded in Base 64.
+     
+     ## Examples:
+     ```swift
+     // Assign an image to Base 64 encoded String in macOS
+     let imageString = NSImage(named: "Background.png").toString()
+     ```
      
      - Parameter imageRepresentation: Determines the representation that will be used when converting the image. The default is `pngRepresentation`.
      
@@ -104,6 +147,12 @@ extension NSImage {
     /**
      Converst the `NSImage` to a `Data` representation.
      
+     ## Examples:
+     ```swift
+     // Assign an image to Base 64 encoded Data in macOS
+     let imageData = NSImage(named: "Background.png").toString()
+     ```
+     
      - Parameter imageRepresentation: Determins the representation that will be used when converting the image. The default is `pngRepresentation`.
      
      - Returns: The `NSImage` in the requested representation converted to a raw `Data`.
@@ -127,6 +176,13 @@ extension NSImage {
     // MARK: - Initializers
     /**
      Creates a new `NSImage` instance from a Base 64 encoded string.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from Base 64 encoded String in macOS
+     let imageString = NSImage(named: "Background.png")
+     let image = NSImage(fromString: imageString)
+     ```
      
      - Parameter value: A Base 64 encoded `String` representing an image.
      */
