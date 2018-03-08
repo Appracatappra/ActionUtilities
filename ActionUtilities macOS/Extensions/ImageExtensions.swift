@@ -180,7 +180,7 @@ extension NSImage {
      ## Examples:
      ```swift
      // Assign an image from Base 64 encoded String in macOS
-     let imageString = NSImage(named: "Background.png")
+     let imageString = NSImage(named: "Background.png").toString()
      let image = NSImage(fromString: imageString)
      ```
      
@@ -191,4 +191,18 @@ extension NSImage {
         self.init(data: data!)
     }
     
+    /**
+     Creates a new `NSImage` instance from a string specifying the name of an image added as an asset.
+     
+     ## Examples:
+     ```swift
+     // Assign an image from an asset name in macOS
+     let imageString = NSImage(named: "Background.png")
+     ```
+     
+     - Parameter value: A Base 64 encoded `String` representing an image.
+     */
+    public convenience init?(named: String) {
+        self.init(named: NSImage.Name(named))
+    }
 }

@@ -18,7 +18,7 @@ import UIKit
  ACNotify.showMessage(text: "Hello World!")
  ```
  */
-public class ACNotify {
+open class ACNotify {
     
     // MARK: - Private variables
     static let duration: Double = 1.0
