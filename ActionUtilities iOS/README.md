@@ -12,7 +12,7 @@ Builds a stand alone framework version from the library for iOS using two build 
 
 ### Make Universal Library
 
-Uses the following shell script to build a universal library that will run on both an iOS Device and the iOS Simulator. This script was derived from the [Build a Universal Framework for iOS using Swift] (https://medium.com/swiftindia/build-a-custom-universal-framework-on-ios-swift-549c084de7c8) article by **swiftindia**:
+Uses the following shell script to build a universal library that will run on both an iOS Device and the iOS Simulator. This script was derived from the [Build a Universal Framework for iOS using Swift](https://medium.com/swiftindia/build-a-custom-universal-framework-on-ios-swift-549c084de7c8) article by **swiftindia**:
 
 ```sh
 #!/bin/sh
