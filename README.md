@@ -1,10 +1,10 @@
 # Action Utilities
 
-**Action Utilities** provide several useful functions that are common across many apps written in Swift and Xcode. These include features such as getting the version of the OS installed on the device the app is running on, testing to see if an app can connect to the internet and getting the device type (for example `iPhoneX`).
+[Action Utilities](http://appracatappra.com/products/action-utilities/) provide several useful functions that are common across many apps written in Swift and Xcode. These include features such as getting the version of the OS installed on the device the app is running on, testing to see if an app can connect to the internet and getting the device type (for example `iPhoneX`).
 
 Additionally, many built-in types (such as `UIColor`, `String` and `Data`) have been extended with useful features such as converting a color to and from a hex string and moving images easily between `Data` and `String` types to support Swift 4's `Codable` protocol.
 
-**Action Utilities** are support on iOS, tvOS, watchOS and macOS.
+**Action Utilities** are support on iOS, tvOS, watchOS and macOS. To find out more, please visit our [Action Utilities Developer Center](http://appracatappra.com/developers/action-utilities-help/).
 
 <a name="Action-Extensions"></a>
 ## Action Extensions
@@ -68,5 +68,23 @@ if HardwareInformation.isConnectedToNetwork {
 	...
 } 
 ```
+
+<a name="Free-to-Use"></a>
+## Free to Use
+
+Because of the basic nature of the functions and utilities provided by **Actions Utilities**, Appracatappra is offering them 100% free to use in any app project of your choosing. Additionally, we intent to keep expanding **Action Utilities** with new features which will also be provided free of charge.
+
+<a name="MIT-License"></a>
+### MIT License
+
+Copyright © 2018 by [Appracatappra, LLC.](http://appracatappra.com)
+
+--
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
