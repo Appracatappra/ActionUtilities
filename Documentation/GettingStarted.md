@@ -8,13 +8,23 @@ This guide is designed to help you get up and running with the **Action Utilitie
 
 The following topics are covered:
 
-* [Adding Action Utilities to an App Project](#Adding-Action-Components-to-an-App-Project)
+* [Installing Action Utilities](#Installing-Action-Utilities)
+* [Adding Action Utilities to an App Project](#Adding-Action-Utilities-to-an-App-Project)
 * [Component Documentation](#Component-Documentation)
 * [Frequently Asked Questions](#Frequently-Asked-Questions)
 * [Getting Support](#Getting-Support)
 
-<a name="Adding-Action-Components-to-an-App-Project"></a>
-## Adding Action Components to an App Project
+<a name="Installing-Action-Utilities"></a>
+## Installing Action Utilities
+
+Before you can use the **Action Utilities** suite in your Xcode Swift app projects you will need to install the framework in the `/Library/Frameworks/ActionUtilities/` directory of your development computer. Double-click the `ActionUtilitiesInstaller.pkg` file to start the installation process:
+
+![](Images/Install01.png)
+
+Follow and follow the on-screen instruction to complete the install. 
+
+<a name="Adding-Action-Utilities-to-an-App-Project"></a>
+## Adding Action Utilities to an App Project
 
 Our components were designed to be quickly added to your app's project with a minimum of code, making it easy to add high-quality, professional features and functionality to your apps.
 
@@ -24,16 +34,18 @@ In **Xcode**, do the following:
 2. Select the **Project** in the **Project Navigator**, select the **General** tab and scroll down to the **Embedded Binaries** section:
 
 	![](Images/Intro01.png)
-3. In **Finder**, open the folder where you unzipped the `ActionUtilitiesFrameworks.zip` file and select the appropriate framework version:
+3. In **Finder**, navigate to the `/Library/Frameworks/ActionUtilities/` directory :
 
 	![](Images/Intro02.png)
-4. Drag the framework into the **Embedded Binaries** section in **Xcode**.
-6. Select **Copy items if needed** and click the **Finish** button:
+4. Open the folder that matches the type of app that you are building (for example, `iOS` for an iOS app project) and drag the framework into the **Embedded Binaries** section in **Xcode**:
 
 	![](Images/Intro03.png)
-7. The framework will be added to both the **Embedded Binaries** and the **Linked Frameworks and Libraries** sections:
+5. You can either choose to use the framework from its default location or copy it into your app's project (by selecting **Copy items if needed**). Click the **Finish** button to complete the install:
 
 	![](Images/Intro04.png)
+7. The framework will be added to both the **Embedded Binaries** and the **Linked Frameworks and Libraries** sections:
+
+	![](Images/Intro05.png)
 
 You are now ready to use the **Action Utilities** suite in your app project. Include the `import ActionUtilities` statement at the top of any class you want use a component from. For example:
 
