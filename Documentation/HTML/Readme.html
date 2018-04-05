@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Installer ReadMe</title>
+<title>WhatsNew</title>
 
 
 <style type="text/css">
@@ -455,13 +455,57 @@ pre[class*="language-"] {
 
 <h1 id="toc_0">What&#39;s New</h1>
 
-<h3 id="toc_1">Version 01.01</h3>
+<h3 id="toc_1">Version 01.02</h3>
+
+<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.02. The initial release includes the following features:</p>
+
+<ul>
+<li><code>UIColor</code> &amp; <code>NSColor</code> Extensions:
+
+<ul>
+<li><code>init(fromGrayScaleShade, withAlphaPercent)</code> - Creates a gray scale color with the given shade (0-255) and alpha (0-100) values.</li>
+<li><code>init(red, green, blue, alpha)</code> - Creates a color from the given red, green, blue values (0-255) and alpha percentage (0-100).</li>
+<li><code>init(fromRGBA)</code> - Creates a color from the given tuple of red, green, blue values (0-255) and alpha percentage (0-100).</li>
+<li><code>init(hue, saturation, brightness, alpha)</code> - Creates a color from the given hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
+<li><code>init(fromHSBA)</code> - creates a color from the given tuple of hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
+<li><code>rgbComponents</code> - Returns a tuple of red, green, blue values (0-255) and alpha percentage (0-100).</li>
+<li><code>alphaValue</code> - Returns the alpha value as a percentage (0-100).</li>
+<li><code>redValue</code> - Returns the red value (0-255).</li>
+<li><code>greenValue</code> - Returns the green value (0-255).</li>
+<li><code>blueValue</code> - Returns the blue value (0-255).</li>
+<li><code>hsbComponents</code> - Returns a tuple of hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
+<li><code>hueValue</code> - Returns the hue value (0-360).</li>
+<li><code>saturationValue</code> - Returns the saturation value as a percentage (0-100).</li>
+<li><code>brightnessValue</code> - Returns the brightness value as a percentage (0-100).</li>
+<li><code>grayScaleComponents</code> - Returns a tuple of shade (0-255) and alpha (0-100).</li>
+<li><code>shadeValue</code> - Returns the shade value (0-255).</li>
+<li><code>withAlphaValue(alpha)</code> - Returns a color based on of the current color with the given alpha value (0-100).</li>
+<li><code>withRedValue(red)</code> - Returns a color based on of the current color with the given red value (0-255).</li>
+<li><code>withGreenValue(green)</code> - Returns a color based on of the current color with the given green value (0-255).</li>
+<li><code>withBlueValue(blue)</code> - Returns a color based on of the current color with the given blue value (0-255).</li>
+<li><code>withHueValue(hue)</code> - Returns a color based on of the current color with the given hue value (0-360).</li>
+<li><code>withSaturationValue(saturation)</code> - Returns a color based on of the current color with the given saturation value (0-100).</li>
+<li><code>withBrightnessValue(brightness)</code> - Returns a color based on of the current color with the given brightness value (0-100).</li>
+</ul></li>
+</ul>
+
+<h3 id="toc_2">Version 01.01</h3>
 
 <p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.01. The initial release includes the following features:</p>
 
 <ul>
 <li><strong>Documentation</strong> - Fixed documentation for including the framework in an app project.</li>
 <li><strong>Minor Fixes</strong> - Added several minor fixes to the framework.</li>
+</ul>
+
+<h3 id="toc_3">Version 01.00</h3>
+
+<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.00. The initial release includes the following features:</p>
+
+<ul>
+<li><strong>Action Extensions</strong> - Extend common, built-in Cocoa, Cocoa Touch and Swift data types.</li>
+<li><strong>General Utilities</strong> - Add several, general utility classes to handle common tasks.</li>
+<li><strong>Hardware Utilities</strong> - Provide information about the device that an app is running on.</li>
 </ul>
 
 

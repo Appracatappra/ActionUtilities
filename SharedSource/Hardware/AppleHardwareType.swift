@@ -398,7 +398,7 @@ public enum AppleHardwareType {
             self = .iMac27In2013
         case "iMac14,1":
             self = .iMac21In2013
-        case "iMac14,1":
+        case "iMac14,3":
             self = .iMac21In2014
         case "iMac15,1", "iMac17,1":
             self = .iMacRetina5K27In2014To2015
@@ -512,8 +512,6 @@ public enum AppleHardwareType {
             self = .appleWatchSeries2
         case "Watch3,1", "Watch3,2", "Watch3,3", "Watch3,4":
             self = .appleWatchSeries3
-        case "Watch1,1":
-            self = .appleWatch
         case "AirPods1,1":
             self = .airPods
         case "iPhone1,1":
