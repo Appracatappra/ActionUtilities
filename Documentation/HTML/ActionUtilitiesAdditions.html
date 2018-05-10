@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>WhatsNew</title>
+<title>ActionUtilitiesAdditions</title>
 
 
 <style type="text/css">
@@ -453,80 +453,233 @@ pre[class*="language-"] {
 
 <body>
 
-<h1 id="toc_0">What&#39;s New</h1>
+<h1 id="toc_0">Action Utilities Additions</h1>
 
-<h3 id="toc_1">Version 01.03</h3>
+<h2 id="toc_1">Version 01.02.00</h2>
 
-<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.03. The initial release includes the following features:</p>
+<p>Today we released a new version of our Swift and Xcode <a href="https://github.com/Appracatappra/ActionUtilities">open source</a> Action Utilities framework of time saving utilities and functions to solve common tasks across a wide range of mobile and desktop apps.</p>
+
+<p>Version 01.02.00 focuses on additions to our <code>UIColor</code> and <code>NSColor</code> extensions, adding useful features that make it easy to do common tasks needed to manipulate colors, something we tend to do a lot of when creating reusable UI controls and frameworks.</p>
+
+<p>In many cases, these additions add the ability to specify colors as a number rage from 0 to 255 rather than 0.0 to 1.0, because it&#39;s the traditional format used by most graphic apps. For numbers that represent a percentage, such as transparency (<code>alpha</code>), we&#39;ve used 0 to 100 instead of 0.0 to 0.1.</p>
+
+<p>These changes are broken down into the following categories:</p>
 
 <ul>
-<li><code>UIColor</code> &amp; <code>NSColor</code> Extensions - Fixed rounding bug that was skewing the results of several color related calculations (such as converting a color to a Hex value).</li>
-<li><code>ACNotify</code> - Added the following properties to control popup notifications:
-
-<ul>
-<li> <code>suppressMultipleMessages</code> - If <code>true</code> and a notification message is already being displayed, any new message will be ignored until the current message has finished displaying. The default value is <code>true</code>.</li>
-<li> <code>notificationsEnabled</code> - If <code>true</code>, <code>ACNotify</code> will display new messages, else if <code>false</code>, all new messages will not be displayed. This is useful if a component displays its own notifications but calls a sub component that also displays notifications. The parent component can use this property to suppress the child&#39;s notifications.</li>
-</ul></li>
-<li><code>HardwareInformation</code> - Added the <code>rootViewController</code> as a shortcut to getting the current Root View Controller for the app&#39;s main window.</li>
+<li><a href="#Initializers">Initializers</a></li>
+<li><a href="#Computed-Properties">Computed Properties</a></li>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Summary">Summary</a></li>
 </ul>
 
-<h3 id="toc_2">Version 01.02</h3>
+<p><a name="Initializers"></a></p>
 
-<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.02. The initial release includes the following features:</p>
+<h2 id="toc_2">Initializers</h2>
+
+<p>The following new initialization routines were added:</p>
+
+<h3 id="toc_3">init(fromGrayScaleShade, withAlphaPercent)</h3>
+
+<p>Creates a new gray scale color for the given shade (0 to 255) with the given transparency. For example:</p>
+
+<div><pre><code class="language-swift">let gray = UIColor(fromGrayScaleShade: 200)</code></pre></div>
+
+<h3 id="toc_4">init(red, green, blue, alpha)</h3>
+
+<p>Creates a new color from the red (0-255), green (0-255), blue (0-255) and alpha (0-100) values. For example:</p>
+
+<div><pre><code class="language-swift">let white = UIColor(red: 255, green: 255, blue: 255)</code></pre></div>
+
+<h3 id="toc_5">init(fromRGBA)</h3>
+
+<p>Creates a new color from a tuple of red (0-255), green (0-255), blue (0-255) and alpha (0-100) values. For example:</p>
+
+<div><pre><code class="language-swift">let white = UIColor(fromRGBA: (red: 255, green: 255, blue: 255, alpha: 100))</code></pre></div>
+
+<h3 id="toc_6">init(hue, saturation, brightness, alpha)</h3>
+
+<p>Creates a new color from the given hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values. For example:</p>
+
+<div><pre><code class="language-swift">let red = UIColor(hue: 0, saturation: 100, brightness: 100)</code></pre></div>
+
+<h3 id="toc_7">init(fromHSBA)</h3>
+
+<p>Creates a new color from a tuple of hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values. For example:</p>
+
+<div><pre><code class="language-swift">let red = UIColor(fromHSBA: (hue: 0, saturation: 100, brightness: 100, alpha: 100))</code></pre></div>
+
+<p><a name="Computed-Properties"></a></p>
+
+<h2 id="toc_8">Computed Properties</h2>
+
+<p>The following computed properties were added:</p>
+
+<h3 id="toc_9">rgbComponents</h3>
+
+<p>Returns a tuple of red, green, blue and alpha values where:</p>
 
 <ul>
-<li><code>UIColor</code> &amp; <code>NSColor</code> Extensions:
-
-<ul>
-<li><code>init(fromGrayScaleShade, withAlphaPercent)</code> - Creates a gray scale color with the given shade (0-255) and alpha (0-100) values.</li>
-<li><code>init(red, green, blue, alpha)</code> - Creates a color from the given red, green, blue values (0-255) and alpha percentage (0-100).</li>
-<li><code>init(fromRGBA)</code> - Creates a color from the given tuple of red, green, blue values (0-255) and alpha percentage (0-100).</li>
-<li><code>init(hue, saturation, brightness, alpha)</code> - Creates a color from the given hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
-<li><code>init(fromHSBA)</code> - creates a color from the given tuple of hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
-<li><code>rgbComponents</code> - Returns a tuple of red, green, blue values (0-255) and alpha percentage (0-100).</li>
-<li><code>alphaValue</code> - Returns the alpha value as a percentage (0-100).</li>
-<li><code>redValue</code> - Returns the red value (0-255).</li>
-<li><code>greenValue</code> - Returns the green value (0-255).</li>
-<li><code>blueValue</code> - Returns the blue value (0-255).</li>
-<li><code>hsbComponents</code> - Returns a tuple of hue (0-360), saturation (0-100), brightness (0-100) and alpha (0-100) values.</li>
-<li><code>hueValue</code> - Returns the hue value (0-360).</li>
-<li><code>saturationValue</code> - Returns the saturation value as a percentage (0-100).</li>
-<li><code>brightnessValue</code> - Returns the brightness value as a percentage (0-100).</li>
-<li><code>grayScaleComponents</code> - Returns a tuple of shade (0-255) and alpha (0-100).</li>
-<li><code>shadeValue</code> - Returns the shade value (0-255).</li>
-<li><code>withAlphaValue(alpha)</code> - Returns a color based on of the current color with the given alpha value (0-100).</li>
-<li><code>withRedValue(red)</code> - Returns a color based on of the current color with the given red value (0-255).</li>
-<li><code>withGreenValue(green)</code> - Returns a color based on of the current color with the given green value (0-255).</li>
-<li><code>withBlueValue(blue)</code> - Returns a color based on of the current color with the given blue value (0-255).</li>
-<li><code>withHueValue(hue)</code> - Returns a color based on of the current color with the given hue value (0-360).</li>
-<li><code>withSaturationValue(saturation)</code> - Returns a color based on of the current color with the given saturation value (0-100).</li>
-<li><code>withBrightnessValue(brightness)</code> - Returns a color based on of the current color with the given brightness value (0-100).</li>
-</ul></li>
+<li><code>red</code> - Is a number between 0 and 255.</li>
+<li><code>green</code> - Is a number between 0 and 255.</li>
+<li><code>blue</code> - Is a number between 0 and 255.</li>
+<li><code>alpha</code> - Is a percentage between 0 and 100.</li>
 </ul>
 
-<h3 id="toc_3">Version 01.01</h3>
+<p>For example:</p>
 
-<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.01. The initial release includes the following features:</p>
+<div><pre><code class="language-swift">let components = UIColor.red.rgbComponents
+print(components.red)</code></pre></div>
+
+<h3 id="toc_10">alphaValue</h3>
+
+<p>Returns the alpha value of a color as 0 to 100. For example:</p>
+
+<div><pre><code class="language-swift">let alpha = UIColor.red.alphaValue</code></pre></div>
+
+<h3 id="toc_11">redValue</h3>
+
+<p>Returns the red value of a color as 0 to 255. For example:</p>
+
+<div><pre><code class="language-swift">let red = UIColor.red.redValue</code></pre></div>
+
+<h3 id="toc_12">greenValue</h3>
+
+<p>Returns the green value of a color as 0 to 255. For example:</p>
+
+<div><pre><code class="language-swift">let green = UIColor.red.greenValue</code></pre></div>
+
+<h3 id="toc_13">blueValue</h3>
+
+<p>Returns the blue value of a color as 0 to 255. For example:</p>
+
+<div><pre><code class="language-swift">let blue = UIColor.red.blueValue</code></pre></div>
+
+<h3 id="toc_14">hsbComponents</h3>
+
+<p>Returns a tuple of hue, saturation, brightness and alpha values where:</p>
 
 <ul>
-<li><strong>Documentation</strong> - Fixed documentation for including the framework in an app project.</li>
-<li><strong>Minor Fixes</strong> - Added several minor fixes to the framework.</li>
+<li><code>hue</code> - Is a number between 0 and 360.</li>
+<li><code>saturation</code> - Is a percentage between 0 and 100.</li>
+<li><code>brightness</code> - Is a percentage between 0 and 100.</li>
+<li><code>alpha</code> - Is a percentage between 0 and 100.</li>
 </ul>
 
-<h3 id="toc_4">Version 01.00</h3>
+<p>For example:</p>
 
-<p>The following features and bug fixes have been added to <code>Action Utilities</code> in version 01.00. The initial release includes the following features:</p>
+<div><pre><code class="language-swift">let components = UIColor.red.hsbComponents
+print(components.hue)</code></pre></div>
+
+<h3 id="toc_15">hueValue</h3>
+
+<p>Returns the hue value of a color as 0 to 360. For example:</p>
+
+<div><pre><code class="language-swift">let hue = UIColor.red.hueValue</code></pre></div>
+
+<h3 id="toc_16">saturationValue</h3>
+
+<p>Returns the saturation value of a color as 0 to 100. For example:</p>
+
+<div><pre><code class="language-swift">let saturation = UIColor.red.saturationValue</code></pre></div>
+
+<h3 id="toc_17">brightnessValue</h3>
+
+<p>Returns the brightness value of a color as 0 to 100. For example:</p>
+
+<div><pre><code class="language-swift">let brightness = UIColor.red.brightnessValue</code></pre></div>
+
+<h3 id="toc_18">grayScaleComponents</h3>
+
+<p>Returns a tuple of the shade of a gray scale color (0-255) and alpha (0-100). For example:</p>
+
+<div><pre><code class="language-swift">let components = UIColor.gray.grayScaleComponents
+print(components.shade)</code></pre></div>
+
+<p><strong>NOTE:</strong> This property assumes that the color is actually a shade of gray. Internally the <code>red</code> component is returned as the <code>shade</code> value.</p>
+
+<h3 id="toc_19">shadeValue</h3>
+
+<p>Returns the shade of gray for the color as 0 to 255. For example:</p>
+
+<div><pre><code class="language-swift">let shade = UIColor.gray.shadeValue</code></pre></div>
+
+<p><strong>NOTE:</strong> This property assumes that the color is actually a shade of gray. Internally the <code>red</code> component is returned as the <code>shade</code> value.</p>
+
+<p><a name="Functions"></a></p>
+
+<h2 id="toc_20">Functions</h2>
+
+<p>The following functions were added:</p>
+
+<h3 id="toc_21">withAlphaValue(alpha)</h3>
+
+<p>Creates a new color from the existing color by replacing the alpha value with the given value (0-100). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withAlphaValue(50)</code></pre></div>
+
+<h3 id="toc_22">withRedValue(red)</h3>
+
+<p>Creates a new color from the existing color by replacing the red value with the given value (0-255). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withRedValue(255)</code></pre></div>
+
+<h3 id="toc_23">withGreenValue(green)</h3>
+
+<p>Creates a new color from the existing color by replacing the green value with the given value (0-255). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withGreenValue(255)</code></pre></div>
+
+<h3 id="toc_24">withBlueValue(blue)</h3>
+
+<p>Creates a new color from the existing color by replacing the blue value with the given value (0-255). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withBlueValue(255)</code></pre></div>
+
+<h3 id="toc_25">withHueValue(hue)</h3>
+
+<p>Creates a new color from the existing color by replacing the hue value with the given value (0-360). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withHueValue(360)</code></pre></div>
+
+<h3 id="toc_26">withSaturationValue(saturation)</h3>
+
+<p>Creates a new color from the existing color by replacing the saturation value with the given value (0-100). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withSaturationValue(50)</code></pre></div>
+
+<h3 id="toc_27">withBrightnessValue(brightness)</h3>
+
+<p>Creates a new color from the existing color by replacing the brightness value with the given value (0-100). For example:</p>
+
+<div><pre><code class="language-swift">let color = UIColor.white.withBrightnessValue(50)</code></pre></div>
+
+<p><a name="Summary"></a></p>
+
+<h2 id="toc_28">Summary</h2>
+
+<p>While none of these enhancements are groundbreaking, or particularly difficult for that matter, they are nice to have and make it easier to do common color manipulation tasks. To find out more, please check out our <a href="http://appracatappra.com/products/action-utilities/">Action Utilities</a> website or our <a href="http://appracatappra.com/developers/action-utilities-help/">Action Utilities Developer Center</a>.</p>
+
+<p>We have full API documentation available as well:</p>
 
 <ul>
-<li><strong>Action Extensions</strong> - Extend common, built-in Cocoa, Cocoa Touch and Swift data types.</li>
-<li><strong>General Utilities</strong> - Add several, general utility classes to handle common tasks.</li>
-<li><strong>Hardware Utilities</strong> - Provide information about the device that an app is running on.</li>
+<li>For <a href="http://appracatappra.com/api/actionutilities/ios/">iOS</a></li>
+<li>For <a href="http://appracatappra.com/api/actionutilities/tvos/">tvOS</a></li>
+<li>For <a href="http://appracatappra.com/api/actionutilities/watchos/">watchOS</a></li>
+<li>For <a href="http://appracatappra.com/api/actionutilities/macos/">macOS</a></li>
 </ul>
 
 
 
 <script type="text/javascript">
 var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0}],string:{pattern:/(["'])(\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"class-name":{pattern:/((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i,lookbehind:!0,inside:{punctuation:/(\.|\\)/}},keyword:/\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(true|false)\b/,"function":/[a-z0-9_]+(?=\()/i,number:/\b-?(?:0x[\da-f]+|\d*\.?\d+(?:e[+-]?\d+)?)\b/i,operator:/--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,punctuation:/[{}[\];(),.:]/};
+</script>
+
+<script type="text/javascript">
+Prism.languages.swift=Prism.languages.extend("clike",{string:{pattern:/("|')(\\(?:\((?:[^()]|\([^)]+\))+\)|\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,inside:{interpolation:{pattern:/\\\((?:[^()]|\([^)]+\))+\)/,inside:{delimiter:{pattern:/^\\\(|\)$/,alias:"variable"}}}}},keyword:/\b(as|associativity|break|case|catch|class|continue|convenience|default|defer|deinit|didSet|do|dynamic(?:Type)?|else|enum|extension|fallthrough|final|for|func|get|guard|if|import|in|infix|init|inout|internal|is|lazy|left|let|mutating|new|none|nonmutating|operator|optional|override|postfix|precedence|prefix|private|Protocol|public|repeat|required|rethrows|return|right|safe|self|Self|set|static|struct|subscript|super|switch|throws?|try|Type|typealias|unowned|unsafe|var|weak|where|while|willSet|__(?:COLUMN__|FILE__|FUNCTION__|LINE__))\b/,number:/\b([\d_]+(\.[\de_]+)?|0x[a-f0-9_]+(\.[a-f0-9p_]+)?|0b[01_]+|0o[0-7_]+)\b/i,constant:/\b(nil|[A-Z_]{2,}|k[A-Z][A-Za-z_]+)\b/,atrule:/@\b(IB(?:Outlet|Designable|Action|Inspectable)|class_protocol|exported|noreturn|NS(?:Copying|Managed)|objc|UIApplicationMain|auto_closure)\b/,builtin:/\b([A-Z]\S+|abs|advance|alignof(?:Value)?|assert|contains|count(?:Elements)?|debugPrint(?:ln)?|distance|drop(?:First|Last)|dump|enumerate|equal|filter|find|first|getVaList|indices|isEmpty|join|last|lexicographicalCompare|map|max(?:Element)?|min(?:Element)?|numericCast|overlaps|partition|print(?:ln)?|reduce|reflect|reverse|sizeof(?:Value)?|sort(?:ed)?|split|startsWith|stride(?:of(?:Value)?)?|suffix|swap|toDebugString|toString|transcode|underestimateCount|unsafeBitCast|with(?:ExtendedLifetime|Unsafe(?:MutablePointers?|Pointers?)|VaList))\b/}),Prism.languages.swift.string.inside.interpolation.inside.rest=Prism.util.clone(Prism.languages.swift);
 </script>
 
 

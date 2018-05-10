@@ -1,5 +1,15 @@
 # What's New
 
+###Version 01.03###
+
+The following features and bug fixes have been added to `Action Utilities` in version 01.03. The initial release includes the following features:
+
+* `UIColor` & `NSColor` Extensions - Fixed rounding bug that was skewing the results of several color related calculations (such as converting a color to a Hex value).
+* `ACNotify` - Added the following properties to control popup notifications:
+	*  `suppressMultipleMessages` - If `true` and a notification message is already being displayed, any new message will be ignored until the current message has finished displaying. The default value is `true`.
+	*  `notificationsEnabled` - If `true`, `ACNotify` will display new messages, else if `false`, all new messages will not be displayed. This is useful if a component displays its own notifications but calls a sub component that also displays notifications. The parent component can use this property to suppress the child's notifications.
+* `HardwareInformation` - Added the `rootViewController` as a shortcut to getting the current Root View Controller for the app's main window.
+
 ###Version 01.02###
 
 The following features and bug fixes have been added to `Action Utilities` in version 01.02. The initial release includes the following features:

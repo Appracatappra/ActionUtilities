@@ -221,6 +221,15 @@ open class HardwareInformation {
             }
         }
     }
+    
+    /**
+     Returns the Root View Controller for the main window in the app.
+    */
+    public static var rootViewController: UIViewController? {
+        // Gain access to main window
+        let window = UIApplication.shared.windows[0]
+        return window.rootViewController
+    }
     #endif
     
     #if !os(watchOS)

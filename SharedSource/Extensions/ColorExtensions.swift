@@ -231,7 +231,7 @@ extension UIColor {
         get {
             var (red, green, blue, alpha) = (CGFloat(0.0), CGFloat(0.0), CGFloat(0.0), CGFloat(0.0))
             self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-            return (red: Int(red * 255), green: Int(green * 255), blue: Int(blue * 255), alpha: Int(alpha * 100))
+            return (red: Int(red * 255.0), green: Int(green * 255.0), blue: Int(blue * 255.0), alpha: Int(alpha * 100.0))
         }
     }
     
@@ -301,7 +301,7 @@ extension UIColor {
         get {
             var (hue, saturation, brightness, alpha) = (CGFloat(0.0), CGFloat(0.0), CGFloat(0.0), CGFloat(0.0))
             self.getRed(&hue, green: &saturation, blue: &brightness, alpha: &alpha)
-            return (hue: Int(hue * 360), saturation: Int(saturation * 100), brightness: Int(brightness * 100), alpha: Int(alpha * 100))
+            return (hue: Int(hue * 360.0), saturation: Int(saturation * 100.0), brightness: Int(brightness * 100.0), alpha: Int(alpha * 100.0))
         }
     }
     
@@ -352,12 +352,14 @@ extension UIColor {
      let components = UIColor.gray.grayScaleComponents
      print(components.shade)
      ```
+     
+     - remarks: This property assumes that the color is actually a shade of gray. Internally the `red` component is returned as the `shade` value.
     */
     public var grayScaleComponents: (shade: Int, alpha: Int) {
         get {
             var (red, green, blue, alpha) = (CGFloat(0.0), CGFloat(0.0), CGFloat(0.0), CGFloat(0.0))
             self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-            return (shade: Int(red * 255), alpha: Int(alpha * 100))
+            return (shade: Int(red * 255.0), alpha: Int(alpha * 100.0))
         }
     }
     
@@ -414,9 +416,9 @@ extension UIColor {
         }
         
         if alpha {
-            return prefix + String(format: "%02lX%02lX%02lX%02lX", lroundf(r * 255), lroundf(g * 255), lroundf(b * 255), lroundf(a * 255))
+            return prefix + String(format: "%02lX%02lX%02lX%02lX", lroundf(r * 255.0), lroundf(g * 255.0), lroundf(b * 255.0), lroundf(a * 255.0))
         } else {
-            return prefix + String(format: "%02lX%02lX%02lX", lroundf(r * 255), lroundf(g * 255), lroundf(b * 255))
+            return prefix + String(format: "%02lX%02lX%02lX", lroundf(r * 255.0), lroundf(g * 255.0), lroundf(b * 255.0))
         }
     }
     

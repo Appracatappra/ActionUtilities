@@ -25,6 +25,13 @@ open class ACNotify {
     static let fadeInDuration: Double = 0.3
     static let fadeOutDuration: Double = 0.5
     static var view: UIView?
+
+    // MARK: - Computed Properties
+    /// If `true` and a notification message is already being displayed, any new message will be ignored until the current message has finished displaying.
+    public static var suppressMultipleMessages: Bool = true
+    
+    /// If `true`, `ACNotify` will display new messages, else if `false`, all new messages will not be displayed. This is useful if a component displays its own notifications but calls a sub component that also displays notifications. The parent component can use this property to suppress the child's notifications.
+    public static var notificationsEnabled: Bool = true
     
     // MARK: - Functions
     /**
@@ -38,6 +45,11 @@ open class ACNotify {
      - Parameter text: The message to display in the popup.
     */
     public static func showMessage(text: String) {
+        // If only one message can be displayed at a time and a message is currently being displayed, avoid showing the new message.
+        if (suppressMultipleMessages && view != nil) || !notificationsEnabled {
+            // New notifications are suppressed.
+            return
+        }
         
         // Create a new button as the "body" of the toast popup
         let v = UIButton(type: UIButtonType.custom)
