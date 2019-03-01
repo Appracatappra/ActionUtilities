@@ -81,10 +81,10 @@ extension UIImage {
         // Take action based on the desired image representation
         switch imageRepresentation {
         case .pngRepresentation:
-            rawData = UIImagePNGRepresentation(self)
+            rawData = self.pngData()
         case .jpgRepresentation(let imageQuality):
             let quality = Float(imageQuality) * 0.01
-            rawData = UIImageJPEGRepresentation(self, CGFloat(quality))
+            rawData = self.jpegData(compressionQuality: CGFloat(quality))
         }
         
         // Encode as base64 and return
@@ -111,10 +111,10 @@ extension UIImage {
         // Take action based on the desired image representation
         switch imageRepresentation {
         case .pngRepresentation:
-            rawData = UIImagePNGRepresentation(self)
+            rawData = self.pngData()
         case .jpgRepresentation(let imageQuality):
             let quality = Float(imageQuality) * 0.01
-            rawData = UIImageJPEGRepresentation(self, CGFloat(quality))
+            rawData = self.jpegData(compressionQuality: CGFloat(quality))
         }
         
         // Return the requested data

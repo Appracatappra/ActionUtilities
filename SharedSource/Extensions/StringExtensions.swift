@@ -20,6 +20,19 @@ import UIKit
  */
 extension String {
     
+    // MARK: - Enumerations
+    /// Defines the type of truncation that will be applied to a string that is too long.
+    public enum TruncationPosition {
+        /// Truncate head, example "...my string".
+        case head
+        
+        /// Truncate middle, example "my...string".
+        case middle
+        
+        /// Truncate end, example "my string...".
+        case tail
+    }
+    
     // MARK: - Custom Operators
     /**
      Sets the `String` from the given `UIColor` where the color is converted to a hex string in the format `#rrggbbaa` where:
@@ -222,5 +235,31 @@ extension String {
         let boundingBox = self.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
         
         return CGSize(width: boundingBox.width, height: boundingBox.height)
+    }
+    
+    /**
+     Truncates the string to the specified length number of characters and appends an optional trailing string if longer.
+     
+     - Parameters:
+     - limit: The maximum number of characters in the string.
+     - position: Where to apply the truncation.
+     - leader: The truncation indicator.
+     - Remark: This functions is from https://gist.github.com/budidino/8585eecd55fd4284afaaef762450f98e with a modification by user Serdar Akarca.
+    */
+    public func truncated(limit: Int, position: TruncationPosition = .tail, leader: String = "...") -> String {
+        guard self.count > limit else { return self }
+        
+        switch position {
+        case .head:
+            return leader + self.suffix(limit)
+        case .middle:
+            let headCharactersCount = Int(ceil(Float(limit - leader.count) / 2.0))
+            
+            let tailCharactersCount = Int(floor(Float(limit - leader.count) / 2.0))
+            
+            return "\(self.prefix(headCharactersCount))\(leader)\(self.suffix(tailCharactersCount))"
+        case .tail:
+            return self.prefix(limit) + leader
+        }
     }
 }

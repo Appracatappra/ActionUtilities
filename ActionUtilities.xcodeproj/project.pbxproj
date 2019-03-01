@@ -58,6 +58,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2D010B6922270E3C0098E179 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D010B6822270E3C0098E179 /* DoubleExtensions.swift */; };
+		2D010B6A22270E3C0098E179 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D010B6822270E3C0098E179 /* DoubleExtensions.swift */; };
+		2D2E266822259F8200FD54CD /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E266722259F8200FD54CD /* IntegerExtensions.swift */; };
+		2D2E26692225A17C00FD54CD /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E266722259F8200FD54CD /* IntegerExtensions.swift */; };
 		2DA009952017BA6C004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
 		2DA009962017BA6C004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
 		2DA009972017BA6D004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
@@ -96,6 +100,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D010B6822270E3C0098E179 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		2D2E266722259F8200FD54CD /* IntegerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerExtensions.swift; sourceTree = "<group>"; };
 		2DA0094B2017B3C4004A5F55 /* ActionUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA0094F2017B3C4004A5F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA009592017B3E3004A5F55 /* ActionUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +262,8 @@
 				2DA009852017B9B5004A5F55 /* DataExtensions.swift */,
 				2DA009872017B9B5004A5F55 /* ImageExtensions.swift */,
 				2DA009862017B9B5004A5F55 /* StringExtensions.swift */,
+				2D2E266722259F8200FD54CD /* IntegerExtensions.swift */,
+				2D010B6822270E3C0098E179 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -436,6 +444,7 @@
 					};
 					2DA009652017B401004A5F55 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					2DA009722017B433004A5F55 = {
@@ -639,9 +648,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2E266822259F8200FD54CD /* IntegerExtensions.swift in Sources */,
 				2DA009A12017BA7E004A5F55 /* ACNotify.swift in Sources */,
 				2DA0099A2017BA78004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA009992017BA78004A5F55 /* AppleHardwareType.swift in Sources */,
+				2D010B6922270E3C0098E179 /* DoubleExtensions.swift in Sources */,
 				2DA009AE2017BA96004A5F55 /* StringExtensions.swift in Sources */,
 				2DA009AD2017BA96004A5F55 /* ImageExtensions.swift in Sources */,
 				2DA009AC2017BA96004A5F55 /* DataExtensions.swift in Sources */,
@@ -666,9 +677,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2E26692225A17C00FD54CD /* IntegerExtensions.swift in Sources */,
 				2DA009A22017BA8A004A5F55 /* ACNotify.swift in Sources */,
 				2DA0099E2017BA79004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA0099D2017BA79004A5F55 /* AppleHardwareType.swift in Sources */,
+				2D010B6A22270E3C0098E179 /* DoubleExtensions.swift in Sources */,
 				2DA009A62017BA95004A5F55 /* StringExtensions.swift in Sources */,
 				2DA009A52017BA95004A5F55 /* ImageExtensions.swift in Sources */,
 				2DA009A42017BA95004A5F55 /* DataExtensions.swift in Sources */,
@@ -1107,7 +1120,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1172,7 +1185,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.2;
 				VALIDATE_PRODUCT = YES;

@@ -52,7 +52,7 @@ open class ACNotify {
         }
         
         // Create a new button as the "body" of the toast popup
-        let v = UIButton(type: UIButtonType.custom)
+        let v = UIButton(type: UIButton.ButtonType.custom)
         view = v
         
         // Calculate the message metrix

@@ -375,6 +375,26 @@ extension UIColor {
         get { return grayScaleComponents.shade}
     }
     
+    /// Returns `true` if the color is bright, else returns `false`.
+    public var isBrightColor: Bool {
+        var r: CGFloat = 0.0
+        var g: CGFloat = 0.0
+        var b: CGFloat = 0.0
+        var a: CGFloat = 0.0
+        var brightness: CGFloat = 0.0
+        
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        // algorithm from: http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
+        brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        if (brightness < 0.5) {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
     // MARK: - Public Functions
     /**
      Converts a `UIColor` to a hex string in the format `rrggbb` or `rrggbbaa` where:
@@ -533,4 +553,33 @@ extension UIColor {
         components.brightness = brightness
         return UIColor(fromHSBA: components)
     }
+    
+    /**
+     Given a background color, return a color that will be high contrast against it.
+     
+     - Parameters:
+         - lightColor: The light contrast color. The default is white.
+         - darkColor: The dark contrast color. The default is black.
+     - Returns: A color that will be high contrast against the given background.
+    */
+    public func contrastingColor(lightColor:UIColor = UIColor.white, darkColor:UIColor = UIColor.black) -> UIColor {
+        
+        var r: CGFloat = 0.0
+        var g: CGFloat = 0.0
+        var b: CGFloat = 0.0
+        var a: CGFloat = 0.0
+        var brightness: CGFloat = 0.0
+        
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        // algorithm from: http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
+        brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        if (brightness < 0.5) {
+            return lightColor
+        }
+        else {
+            return darkColor
+        }
+    }
+    
 }
