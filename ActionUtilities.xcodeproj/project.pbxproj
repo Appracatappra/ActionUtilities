@@ -62,10 +62,6 @@
 		2D010B6A22270E3C0098E179 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D010B6822270E3C0098E179 /* DoubleExtensions.swift */; };
 		2D2E266822259F8200FD54CD /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E266722259F8200FD54CD /* IntegerExtensions.swift */; };
 		2D2E26692225A17C00FD54CD /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E266722259F8200FD54CD /* IntegerExtensions.swift */; };
-		2DA009952017BA6C004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
-		2DA009962017BA6C004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
-		2DA009972017BA6D004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
-		2DA009982017BA6D004A5F55 /* TrimFramework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2DA009892017B9CB004A5F55 /* TrimFramework.sh */; };
 		2DA009992017BA78004A5F55 /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0098D2017BA16004A5F55 /* AppleHardwareType.swift */; };
 		2DA0099A2017BA78004A5F55 /* HardwareInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0098C2017BA16004A5F55 /* HardwareInformation.swift */; };
 		2DA0099B2017BA78004A5F55 /* AppleHardwareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA0098D2017BA16004A5F55 /* AppleHardwareType.swift */; };
@@ -97,6 +93,10 @@
 		2DA009B82017BF20004A5F55 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA009B72017BF20004A5F55 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DA009BA2017BFA4004A5F55 /* ActionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA009B92017BFA4004A5F55 /* ActionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DCB835320190AD9009BEF01 /* ACNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB835220190AD9009BEF01 /* ACNotify.swift */; };
+		2DFD0DB22239397900859326 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD0DB12239397900859326 /* HTMLEntity.swift */; };
+		2DFD0DB32239397900859326 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD0DB12239397900859326 /* HTMLEntity.swift */; };
+		2DFD0DB42239397900859326 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD0DB12239397900859326 /* HTMLEntity.swift */; };
+		2DFD0DB52239397900859326 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD0DB12239397900859326 /* HTMLEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +140,7 @@
 		2DD0E935205972AD00724964 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DD0E9362059732300724964 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2DDBA9EA2051B99B00B4CCAD /* ActionUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActionUtilities.framework; path = ActionUtilitiesFrameworks/iOS/ActionUtilities.framework; sourceTree = "<group>"; };
+		2DFD0DB12239397900859326 /* HTMLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +274,7 @@
 			children = (
 				2DA0098A2017BA02004A5F55 /* README.md */,
 				2DA0098B2017BA03004A5F55 /* ACNotify.swift */,
+				2DFD0DB12239397900859326 /* HTMLEntity.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -498,7 +500,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA009952017BA6C004A5F55 /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +507,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA009962017BA6C004A5F55 /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +514,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA009972017BA6D004A5F55 /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +521,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DA009982017BA6D004A5F55 /* TrimFramework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2E266822259F8200FD54CD /* IntegerExtensions.swift in Sources */,
+				2DFD0DB22239397900859326 /* HTMLEntity.swift in Sources */,
 				2DA009A12017BA7E004A5F55 /* ACNotify.swift in Sources */,
 				2DA0099A2017BA78004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA009992017BA78004A5F55 /* AppleHardwareType.swift in Sources */,
@@ -668,6 +667,7 @@
 				2DA009A92017BA95004A5F55 /* ImageExtensions.swift in Sources */,
 				2DA0099C2017BA78004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA009A82017BA95004A5F55 /* DataExtensions.swift in Sources */,
+				2DFD0DB32239397900859326 /* HTMLEntity.swift in Sources */,
 				2DA0099B2017BA78004A5F55 /* AppleHardwareType.swift in Sources */,
 				2DA009A72017BA95004A5F55 /* ColorExtensions.swift in Sources */,
 			);
@@ -678,6 +678,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2E26692225A17C00FD54CD /* IntegerExtensions.swift in Sources */,
+				2DFD0DB42239397900859326 /* HTMLEntity.swift in Sources */,
 				2DA009A22017BA8A004A5F55 /* ACNotify.swift in Sources */,
 				2DA0099E2017BA79004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA0099D2017BA79004A5F55 /* AppleHardwareType.swift in Sources */,
@@ -698,6 +699,7 @@
 				2DA009B12017BAAF004A5F55 /* ImageExtensions.swift in Sources */,
 				2DA009A02017BA79004A5F55 /* HardwareInformation.swift in Sources */,
 				2DA009B02017BAAF004A5F55 /* DataExtensions.swift in Sources */,
+				2DFD0DB52239397900859326 /* HTMLEntity.swift in Sources */,
 				2DA0099F2017BA79004A5F55 /* AppleHardwareType.swift in Sources */,
 				2DA009AF2017BAAF004A5F55 /* ColorExtensions.swift in Sources */,
 			);
