@@ -16,7 +16,7 @@ public extension Int {
      - Parameter formatString: The pattern to format the Int into. The default pattern is `#,##0.##`.
      - Returns: The Int as a string in the given format.
     */
-    public func formatted(as formatString:String = "#,##0.##") -> String {
+    func formatted(as formatString:String = "#,##0.##") -> String {
         let formatter = NumberFormatter()
         formatter.positiveFormat = formatString
         formatter.negativeFormat = formatString

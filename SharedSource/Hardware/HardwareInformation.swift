@@ -194,7 +194,7 @@ open class HardwareInformation {
     #if os(iOS)
     /// Returns the screen bounds rotated to fit the current device oreintation. If the orientation cannot be discovered, the device is assumed to be in the `portrait` orientation.
     /// - Remark: This property is deprecated on iOS 8.0 and greater since the main screen bounds are always returned based on the device's orientation.
-    @available(*, deprecated: 8.0)
+    @available(*, deprecated)
     public static var rotatedScreenBounds: CGRect {
         // Take action based on the device orientation
         switch deviceOrientation {
